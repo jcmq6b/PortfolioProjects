@@ -1,0 +1,31 @@
+.navbar{
+    justify-content: space-between;
+}
+mat-toolbar{
+    margin-top: 0.5rem;
+    background-color:white;
+    box-shadow: 0 0.1rem 1rem rgb(80, 80, 80);
+    overflow: auto;
+    z-index: 1;
+}
+
+span{
+    padding: 1rem;
+    border-right: 1px solid gray;
+}
+
+span:hover{
+    background-color: rgb(202, 202, 202);
+}
+
+span:focus{
+    outline: none;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+.last{
+    border-right:none;
+}

@@ -1,0 +1,23 @@
+
+
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$resume-website-primary: mat-palette($mat-indigo);
+$resume-website-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$resume-website-warn: mat-palette($mat-red);
+
+
+$resume-website-theme: mat-light-theme((
+  color: (
+    primary: $resume-website-primary,
+    accent: $resume-website-accent,
+    warn: $resume-website-warn,
+  )
+));
+
+@include angular-material-theme($resume-website-theme);
+

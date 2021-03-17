@@ -1,0 +1,86 @@
+#projects_container{
+
+}
+#side_nav{
+    margin-top: -74px;
+    padding-top: 10%;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    width: 15vw;
+    min-width: 175px;
+    max-width: 500px;
+    background-color:  rgb(135, 175, 192); 
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 0 0.1rem 1rem rgb(80, 80, 80);
+
+    background: url("../../../assets/images/side_bar_background.jpg") no-repeat;
+    background-size: cover;
+
+    line-height: 1.2;
+}
+
+
+li{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    list-style-type: none;
+    font-size: 2em;
+}
+
+a{
+    color: black;
+}
+
+.title{
+    text-align: center;
+    padding-top: 40px;
+}
+
+h1{
+    font-family: bangers;
+    font-size: 350%;
+}
+
+.project_content{
+    width: 40vw;
+    height: 500px;
+    max-height: 90vh;
+    margin: 40px;
+}
+
+.app_picture{
+
+}
+
+.app_picture img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#bet_tracker, #showcase, #pr_tracker{
+    height: 100vh;
+    min-height: 600px;
+    margin-left: 12%;
+}
+
+#div1{
+    background-color: rgba(93, 147, 255, 0.43);
+}
+#div2{
+    background-color: rgba(167, 255, 199, 0.326);
+}
+#div3{
+    background-color: rgba(93, 147, 255, 0.43);
+}
+
+@media (max-width: 960px) { 
+    #side_nav{ 
+      display: none; 
+    } 
+    #bet_tracker, #showcase, #pr_tracker{
+        margin-left: 5%;
+    }
+}

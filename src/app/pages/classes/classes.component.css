@@ -1,0 +1,13 @@
+table{
+    background-color: rgb(243, 243, 243);
+}
+
+.content_wrapper{
+    margin: 50px;
+}
+
+.title_wrapper{
+    color:white;
+    text-shadow: 0 1px black;
+}
+
