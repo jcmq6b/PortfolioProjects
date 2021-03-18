@@ -43,21 +43,23 @@ h1{
     font-family: bangers;
     font-size: 350%;
 }
-
 .project_content{
-    width: 40vw;
-    height: 500px;
-    max-height: 90vh;
-    margin: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.description{
+    height: 90%;
 }
 
 .app_picture{
-
+    width: 50%;
 }
 
 .app_picture img{
-    max-width: 200px;
-    max-height: 200px;
+    width: 100%;
 }
 
 #bet_tracker, #showcase, #pr_tracker{
