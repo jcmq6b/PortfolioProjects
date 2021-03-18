@@ -31,7 +31,7 @@
 ### Site Info Page
 - This page gives information on the server, web serve, and site
 
-##Projects
+## Projects
 #### Bet Tracker App
 
 
