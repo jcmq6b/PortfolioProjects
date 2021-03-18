@@ -32,6 +32,10 @@ a{
     color: black;
 }
 
+.project_content a{
+    color: rgb(0, 33, 181);
+}
+
 .title{
     text-align: center;
     padding-top: 20px;
