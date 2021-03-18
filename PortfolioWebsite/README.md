@@ -26,10 +26,14 @@
 - Gives the course number and description
 
 ### Projects Page
-- This page (currently) hosts three projects I've made
+- This page (currently) hosts three of the projects I've made
 
+### Site Info Page
+- This page gives information on the server, web serve, and site
+
+## Projects
 #### Bet Tracker App
-
+- Coming Soon...
 
 #### Risk Of Rain 2 Character Showcase Website
 - [Link To Website](https://www.murpheysdomain.com/RoR2CharacterShowcase/)
@@ -39,5 +43,3 @@
 - [Link To Code](https://github.com/Mizzou-CSIT4830-CS7830-F20/hackweekprojects-codemonkeys/tree/master/code/pr-app)
 - [Link To App Report](https://github.com/Mizzou-CSIT4830-CS7830-F20/hackweekprojects-codemonkeys/blob/master/report/report.md)
 
-
-### Site Info Page
