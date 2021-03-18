@@ -4,21 +4,19 @@
 #side_nav{
     margin-top: -74px;
     padding-top: 10%;
+    padding-right: 20px;
     position: fixed;
     left: 0;
     height: 100vh;
-    width: 15vw;
+    width: 10vw;
     min-width: 175px;
     max-width: 500px;
-    background-color:  rgb(135, 175, 192); 
+    background-color:  rgb(255, 255, 255); 
     overflow-x: hidden;
     overflow-y: auto;
     box-shadow: 0 0.1rem 1rem rgb(80, 80, 80);
-
-    background: url("../../../assets/images/side_bar_background.jpg") no-repeat;
-    background-size: cover;
-
     line-height: 1.2;
+    text-align: center;
 }
 
 
@@ -37,33 +35,52 @@ a{
 .title{
     text-align: center;
     padding-top: 40px;
+    margin-bottom: 40px;
 }
 
 h1{
     font-family: bangers;
-    font-size: 350%;
+    font-size: 3em;
+}
+
+.link:hover{
+    text-shadow: 1px 1px 1px rgb(255, 243, 110);
 }
 
 .project_content{
-    width: 40vw;
-    height: 500px;
-    max-height: 90vh;
-    margin: 40px;
+    height: 100vh;
+}
+
+.description{
+    margin: 20px 0 20px 0;
+    width: 95%;
+    max-height: 30%;
+    overflow-y: auto;
+}
+
+.pictures{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
 
 .app_picture{
-
+    padding: 5px;
+    width: 45%;
+    min-width: 300px;
+    max-width: 1000px;
 }
 
 .app_picture img{
-    max-width: 200px;
-    max-height: 200px;
+    width:100%;
 }
 
 #bet_tracker, #showcase, #pr_tracker{
     height: 100vh;
     min-height: 600px;
-    margin-left: 12%;
+    margin-left: 9%;
 }
 
 #div1{
@@ -76,7 +93,7 @@ h1{
     background-color: rgba(93, 147, 255, 0.43);
 }
 
-@media (max-width: 960px) { 
+@media (max-width: 1200px) { 
     #side_nav{ 
       display: none; 
     } 
