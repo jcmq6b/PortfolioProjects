@@ -8,7 +8,7 @@
     position: fixed;
     left: 0;
     height: 100vh;
-    width: 10vw;
+    width: 8vw;
     min-width: 175px;
     max-width: 500px;
     background-color:  rgb(255, 255, 255); 
@@ -47,14 +47,14 @@ h1{
     text-shadow: 1px 1px 1px rgb(255, 243, 110);
 }
 
-.project_content{
-    height: 100vh;
-}
+/* .project_content{
+    min-height: 100%;
+} */
 
 .description{
     margin: 20px 0 20px 0;
     width: 95%;
-    max-height: 30%;
+    max-height: 35%;
     overflow-y: auto;
 }
 
@@ -68,19 +68,18 @@ h1{
 
 .app_picture{
     padding: 5px;
-    width: 45%;
-    min-width: 300px;
-    max-width: 1000px;
+    width: 590px;
+    height: 100%;
 }
 
 .app_picture img{
-    width:100%;
+
 }
 
 #bet_tracker, #showcase, #pr_tracker{
-    height: 100vh;
+    min-height: 100vh;
     min-height: 600px;
-    margin-left: 9%;
+    margin-left: 7%;
 }
 
 #div1{
