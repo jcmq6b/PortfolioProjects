@@ -1,27 +1,43 @@
-# ResumeWebsite
+# Portfolio Website Github
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- This site is created to host my portolio.
+- It is created using Angular
+- Designed using Material Design, Bootstrap, and custom CSS
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+### Home Page
+- On the left my contact information, education, and link to github
+- On the right my profile picture
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Skills Page
+- This page lists my technological skills
+- Coding Languages I know
+- What Applications I know how to use
+- What Frameworks I know how to use
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Classes Page
+- This page lists the relavent courses I've taken
+- Gives the course number and description
 
-## Running end-to-end tests
+### Projects Page
+- This page (currently) hosts three projects I've made
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+#### Bet Tracker App
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Risk Of Rain 2 Character Showcase Website
+- [Link To Website](https://www.murpheysdomain.com/RoR2CharacterShowcase/)
+- [Link To Code](https://github.com/jcmq6b/PortfolioProjects/tree/master/RoR2CharacterShowcase)
+
+#### Personal Record App
+- [Link To Code](https://github.com/Mizzou-CSIT4830-CS7830-F20/hackweekprojects-codemonkeys/tree/master/code/pr-app)
+- [Link To App Report](https://github.com/Mizzou-CSIT4830-CS7830-F20/hackweekprojects-codemonkeys/blob/master/report/report.md)
+
+
+### Site Info Page
