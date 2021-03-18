@@ -1,0 +1,443 @@
+[
+    {"Commando":{
+        "Primary":{ 
+            "Double Tap":{ 
+                "Description":"Shoot twice for 2x90% damage.",
+                "Cooldown": "None",
+                "Note": "Scales with attack speed."
+            }     
+        },       
+        "Secondary":{
+            "Phase Rounds": {
+                "Description": "Fire a piercing bullet for 230% damage.",
+                "Cooldown": "3s",
+                "Note": "Can travel through terrain."
+            },
+            "Phase Blast": {
+                "Description": "Replaces Phase Rounds. Fire two close-range blasts that deal 8x200% damage total.",
+                "Cooldown": "3s",
+                "Note": "Unlocked by the Rolling Thunder Challenge: As Commando, land the killing blow on an Overloading Worm."
+            }
+        },
+        "Utility": {
+            "Tactical Dive":{
+                "Description": "Roll a short distance.",
+                "Cooldown": "4s",
+                "Note": ""
+            },
+            "Tactical Slide":{
+                "Description": "Slide on the ground for a short distance. You can fire while sliding.",
+                "Cooldown": "4s",
+                "Note": "Unlocked by the Godspeed Challenge: As Commando, fully charge the first-stage teleporter before the timer hits 5 minutes." 
+            }
+        },
+        "Special":{
+            "Suppressive Fire":{
+                "Description": "Fire repeatedly, stunning enemies for 100% damage per bullet.",
+                "Cooldown": "9s",
+                "Note": "Number of shots scale with attack speed, with a default of 6"  
+            },
+            "Frag Grenade":{
+                "Description": "Throw a grenade that explodes for 175% damage. Deals 4x damage in the center of the explosion. Can hold up to 2.",
+                "Cooldown": "5s",
+                "Note": "Unlocked by the Incorruptible Challenge: As Commando, clear 20 stages in a single run without picking up any Lunar items."  
+            }
+        }
+    }},
+    
+    {"Huntress":{
+        "Primary":{
+            "Strafe": {
+                "Description": "Fire a seeking arrow for 150% damage. Can be used while sprinting.",
+                "Cooldown": "None",
+                "Note": "Fire Rate: 0.5s"
+            },
+            "Flurry":{
+                "Description": "Replaces Strafe. Draw back a volley of 3 seeking arrows for 3x100% damage. Critical Strikes fire 6 arrows. Can be used while sprinting.",
+                "Cooldown": "None",
+                "Note": "Fire Rate: 1.3s. Unlocked by Finishing Touch Challenge: as Huntress land a killing blow with every possible hit of a single glaive." 
+            }
+        },
+        "Secondary":{
+            "Laser Glaive":{
+                "Description": "Throw a seeking glaive that bounces up to 6 times for 250% damage. Damage increases by 10% per bounce.",
+                "Cooldown": "7s",
+                "Note": "Can travel through terrain"
+            }
+        },
+        "Utility":{
+            "Blink":{
+                "Description": "Disappear and teleport forward.",
+                "Cooldown": "7s",
+                "Note": ""
+            },
+            "Phase Blink":{
+                "Description": "Replaces Blink. Disappear and teleport a short distance. Can store up to 3 charges. Can be used while sprinting.",
+                "Cooldown": "2s",
+                "Note": "Can't blink upwards. Unocked by the One Shot, One Kill Challenge: as Huntress collect and carry 12 Crowbars at once."
+            }
+        },
+        "Special":{
+            "Arrow Rain":{
+                    "Description": "Teleport into the sky. Target an area to rain arrows, slowing all enemies and dealing an initial 110% damage and 330% damage per scond afterwards.",
+                    "Cooldown": "12s",
+                    "Note": ""
+            },
+            "Ballista":{
+                    "Description": "Replaces Arrow Rain. Teleport backwards into the sky. Fire up to 3 energy bolts, dealing 3x900% damage.",
+                    "Cooldown": "12s",
+                    "Note": "Unlocked by Piercing Wind Challenge: as Huntress shtart and finish either Rallypoint Delta or Scorched Arces without falling below 100% health."
+            }
+        }
+    }}, 
+    
+    {"MUL-T":{
+        "Passive":{
+           "Multifunctional": {
+                "Description":"MUL-T can use two equipments and primary abilties. The active equiment and primary ability is swapped by using Retool.",
+                "Cooldown": "NA",
+                "Note": ""
+           }
+       },
+        "Primary":{
+            "Auto Nailgun":{
+                "Description":"Rapidly fire nails for 60% damage. Fires six nails when initially pressed.",
+                "Cooldown": "None",
+                "Note": ""
+            },
+            "Scrap Launcher": {
+                "Description": "Fire an arching hunk that explodes for 360% damage. Hold up to 4. Enemies that are damaged by the AOE, not hit directly, take 90% damage.",
+                "Cooldown": "1.5s",
+                "Note": "Unlocked by the Pest Control Challenge: as MUL-T defeat two Beetle Queens without leaving the teleporter zone."
+            },
+            "Rebar Puncher": {
+                "Description": "Fire a piercing rebar that deals 600% damage.",
+                "Cooldown": "None",
+                "Note": ""
+            },
+            "Power-Saw":{
+                "Description": "Saw nearby enemies for 1000% damage per second. Slightly pulls you foraward whenever you hit a target. Can be used while Transport Mode is active.",
+                "Cooldown": "None",
+                "Note":"Unlocked by the Gotcha! Challenge: as MUL-T land the killing blow on an Imp Overlord with the Preon Accumulator."
+            }
+        },
+        "Secondary":{
+            "Blast Canister":{
+                "Description": "Launch a stun canister for 220% damage. Drops stun bomblets for 5x44% damage.",
+                "Cooldown": "6s",
+                "Note": ""
+            }
+        },
+        "Utility":{
+            "Transport Mode": {
+                "Description": "Zoom forward, gaining armor and speed. Deals 250% damage to enemies in the way. Deals more damage at higher speeds.",
+                "Cooldown": "8s",
+                "Note": "Grants 200 Armor, and up to 25% additional speed. Ramming a large enemy will halt the skill and deal 4x the original damage(including speed bounus damage), and stun the target."
+            }
+        },
+        "Special":{
+            "Retool": {
+                "Description": "Switches his primary fire between the rapid Auto-Nailgun and a peircing heavy-damage Rebar Puncher.(Also switches between MUL-T's primary and secondary Equipment)",
+                "Cooldown": "0.5s",
+                "Note": ""
+            }
+        }
+    }},
+    
+    {"Engineer":{
+        "Primary":{
+            "Bouncing Grenades": {
+                "Description": "Charge up to 8 grenades that deal 100% damage each. Automatically fires after a short period of being fully charged.",
+                "Cooldown": "None" ,
+                "Note": "Can sprint while charging."
+            }
+        },
+        "Secondary":{
+            "Pressure Mines": {
+                "Description": "Place a mine that deals 300% damage when an enemy walks nearby and deals 900% damage if allowed to fully arm. Holds up to 4 charges.",
+                "Cooldown": "8s",
+                "Note": "Mines do not stick to allies or enemies, but they do stick to Bubble Shields."
+            },
+            "Spider Mines": {
+                "Description": "Replaces Pressure Mines. Place a robot mine that deals 600% damage and will seek out enemies when they walk nearby.",
+                "Cooldown": "8s",
+                "Note": "Unlocked by the 100% Calculated Challenge: as Engineer defeat the teleporter boss in less than 5 seconds after it spawns."
+            }
+        },
+        "Utility":{
+            "Bubble Shield": {
+                "Description":"Places an impenetrable shield that blocks all incoming damage. Allows projectiles to go out of the shield, while blocking incoming projectiles from the outside. Lasts 15 seconds.",
+                "Cooldown": "25s",
+                "Note": ""
+            },
+            "Thermal Harpoons":{
+                "Description": "Replaces Bubble Shield. Enter target painting mode to launch heat-seeking harpoons that deal 500% damage each. Can store up to 4.",
+                "Cooldown": "2.75s",
+                "Note": "Unlocked by the Zero Sum Challenge: as Engineer finish charging the teleporter with zero monsters remaining on the stage."
+            }
+            
+        },
+        "Special":{
+            "Gauss Auto Turret": {
+                "Description":"Place a turret that inherits all your items. Fires a cannon for 70% of the turrets' damage, all turret items will use the turrets' base damage to calculate. Can place up to 2.",
+                "Cooldown": "30s",
+                "Note": "Hits per second scale with attack speed."
+            },
+            "Carbonizer Turret": {
+                "Description":"Replaces TR12 Gauss Auto-Turret. Place a mobile turret that inherits all your items. Fires a laser for 200% damage per second that slows enemies. Can place up to 2.",
+                "Cooldown": "30s",
+                "Note": "Hits per second scale with attack speed. Unlocked by Better With Friends Challenge: as Engineer recruit 12 minions at one time."
+             }
+        }
+    }},
+    
+    {"Artificer":{
+        "Passive":{
+            "ENV Suit": {
+                "Description":"Holding the Jump key causes the Artificer to hover in the air.",
+                "Cooldown": "NA",
+                "Note": ""
+            }
+        },
+        "Primary":{
+            "Flame Bolt": {
+                "Description":"Fire a bolt for 220% damage that ignites enemies. Hold up to 4.",
+                "Cooldown": "1.3s",
+                "Note": "Burns for 8 ticks." 
+            },
+            "Plasma Bolt": {
+                "Description":"Replaces Flame Bolt. Fire a bolt for 220% damage that explodes in a small area. Hold up to 4.",
+                "Cooldown": "1.3s",
+                "Note": "Unlocked by the Massacre Challenge: as Artrificer perform a multikill of 20 enemies."
+            }
+        },
+        "Secondary":{
+            "Charged Nano-Bomb": {
+                "Description":"Charge up a nano-bomb that deals 400%-1200% damage and stuns all enemies. Additionally, the orb fires arcs of lightning at nearby enemies, once per enemy, dealing 100%-220% damage.",
+                "Cooldown": "5s",
+                "Note": "Can Sprint while charging. Charge time decreases with attack speed. The orb fires bolts at nearby enemies as it passes them."
+            },
+            "Cast Nano-Spear": {
+                "Description":"Replaces Charged Nano-Bomb. Charge up a piercing nano-spear that deals 400%-1200% damage and freezes all enemies.",
+                "Cooldown": "5s",
+                "Note": ""
+            }
+        },
+        "Utility":{
+            "Snapfreeze": {
+                "Description":"Create a barrier that freezes enemies for 100% damage. Enemies at low health(~33%) are instantly killed while frozen.",
+                "Cooldown": "12s",
+                "Note": "Can't freeze bosses. Can burn while Frozen."
+            }
+        },
+        "Special":{
+            "Flamethrower": {
+                "Description":"Burn all enemies infront of you for 1700% to 4400% damage.",
+                "Cooldown": "5s",
+                "Note": "Pierces through enemies. If crit procs all the hits will crit. Takes 3s to fire."
+            },
+            "Ion Surge": {
+                "Description":"Replaces Flamethrower. Burst into the sky, dealing 800% damage and stunning nearby enemies. Launch velocity increases with speed, can be used while airborne.",
+                "Cooldown": "8s",
+                "Note": "Unlocked by the Orbital Bombardment Challenge: as Artificer kill 15 enemies before touching the ground."
+            }
+        }
+    }},
+    
+    {"Mercenary":{
+        "Passive":{
+            "Cybernetic Enhancements": {
+                "Description":"The Mercenary can jump twice.",
+                "Cooldown": "NA",
+                "Note": ""
+            }
+        },
+        "Primary":{
+            "Laser Sword": {
+                "Description":"Slice infront for 130% damage. Every 3rd hit strikes in a greater area for 300% damage.",
+                "Cooldown": "None",
+                "Note": "Base swing speed is 0.42s per swing, with a 0.64s recovery window after the third swing. Bonus attack speed will decrease the time spent in the recovery animation, but will not remove or negate it"
+            }
+        },
+        "Secondary":{
+            "Whirlwind": {
+                "Description":"Quickly slice horizontally twice, dealing 2x200% damage. If airborne, slice vertically instead.",
+                "Cooldown": "2.5s",
+                "Note": "The animation speed is improved with attack speed and also reduces the time taken to cast other spells."
+            },
+            "Rising Thunder": {
+                "Description":"Replaces Whirlwind. Unleash a slicing uppercut, dealing 450% damage and sending you airborne",
+                "Cooldown": "3s",
+                "Note": "Unlocked by the Demon of the Skies Challenge: as Mercenary don't touch the ground for 30 seconds."
+            }
+        },
+        "Utility":{
+            "Blinding Assault": {
+                "Description":"Dash forward, stunning enemies for 300% damage. If you hit an enemy you can dash again up to 3 total",
+                "Cooldown": "7s",
+                "Note": "Distance travelled scales with attack speed. The icon changes depending on the number of uses available; Blue for three, Yellow for two, Red for one."
+            }
+        },
+        "Special":{
+            "Eviscerate": {
+                "Description":"target the nearest enemy, attacking them for 110% damage repeatedly. You cannot be hit for the duration of 1.3s after casting.",
+                "Cooldown": "6s",
+                "Note": "Invincible for 0.6s after Eviserate ends. Number of damage ticks scales with attack speed(without affecting its duration)"
+            },
+            "Slicing Winds": {
+                "Description":"Replaces Eviserate. Fire a wind of blades that attack up to 3 enemies for 8x100% damage.",
+                "Cooldown": "6s",
+                "Note": "Unlocked by the Ethereal Challenge: as Mercenary complete a Prismatic Trial without falling below 100% health."
+            }
+        }
+    }},
+    
+    {"Rex":{
+        "Passive": {
+            "Natural Toxins":{
+                "Description":"Certain attacks Weaken, reducing armor by 30, their damage by 40% and move speed by 40%",
+                "Cooldown": "NA",
+                "Note": ""
+            }
+        },
+        "Primary":{
+            "DIRECTIVE Inject": {
+                "Description":"Fires 3 syringes for 3x80% damage. The last syringe Weakens and heals for 60% of damage dealt.",
+                "Cooldown": "None",
+                "Note": ""
+            }
+        },
+        "Secondary":{
+            "Seed Barrage": {
+                "Description":"Costs 15% of your current health. Launch a mortar into the sky for 450% damage.",
+                "Cooldown": "0.5s",
+                "Note": ""
+            },
+            "DIRECTIVE Drill": {
+                "Description":"Replaces Seed Barrage. Launch a series of seed bullets into the sky, raining down for 450% damage per second.",
+                "Cooldown": "6s",
+                "Note": "Unocked by the Bushwhacked Challenge: as Rex complete an entire teleporter event while under 50% health."
+            }
+        },
+        "Utility":{
+            "DIRECTIVE Disperse": {
+                "Description":"Fire a sonic boom that pushes and Weakens all enemies hit. Pushes you backwards if you are airborne.",
+                "Cooldown": "5s",
+                "Note": "Walking backwards then jumping and using DIRECTIVE Disperse at a downward angle can lauch you a long distance in the backwards direction."
+            },
+            "Bramble Volley": {
+                "Description":"Replaces DIRECTIVE Disperse. Costs 20% of your current health. Fire thorns that pushes and damages all enemies hit for 550% damage. Pushes you backwards if you airborne. Heals for every target hit.",
+                "Cooldown": "5s",
+                "Note": "Unlocked by the Dunked Challenge: as Rex kill a Clay Dunestrider on Abandoned Aqueduct by throwing it into a pit."
+            }
+        },
+        "Special":{
+            "Tangling Growth": {
+                "Description":"Costs 25% of your current health. Fires a flower that roots for 200% damage. Heals for every target hit.",
+                "Cooldown": "12s",
+                "Note": ""
+            }
+        }
+    }},
+    
+    {"Loader":{
+        "Passive":{
+            "Scrap Barrier": {
+                "Description":"The loader is immune to fall damage. Striking enemies with the Loader's gauntlets grants a temporary barrier.",
+                "Cooldown": "NA",
+                "Note": "Barrier gain is 5% the max barrier."
+            }
+        },
+        "Primary":{
+            "Knuckleboom": {
+                "Description":"Swing at nearby enemies for 320% damage.",
+                "Cooldown": "None",
+                "Note": ""
+            }
+        },
+        "Secondary":{
+            "Grapple Fist": {
+                "Description":"fire your gauntlet forward, pulling you to the target.",
+                "Cooldown": "5s",
+                "Note": "Does not damage enemies"
+            },
+            "Spiked Fist": {
+                "Description":"Replaces Grapple Fist. Fire your gauntlet forward, dealing 320% damage and stunning. Pulls you to heavy targets. Light targets are pulled to you instead.",
+                "Cooldown": "5s",
+                "Note": "Unlocked by the Swing By Challenge: as Loader reach and proceed through the Celestial Portal in 25 minutes or less."
+            }
+        },
+        "Utility":{
+            "Charged Gauntlet": {
+                "Description":"Charge up a massive punch for 600%-2700% damage that sends you flying forward.",
+                "Cooldown": "5s",
+                "Note": "The distance and damage increase the longer its charged. Deals significantly more damage the faster you are moving. Only goes on cooldown if the attack connects with an enemy or terrain."
+            },
+            "Thunder Gauntlet": {
+                "Description":"Replaces Charged Gauntlet. Charge up a single punch for 2100% damage that also shocks all enemies in a cone for 1000% damage. Cannot hold the charge.",
+                "Cooldown": "5s",
+                "Note": "Deals significantly more damage the faster you are moving. Only goes on cooldown if the attack connects with an enemy or terrain. Unlocked by the Earthshatter Challenge: as Loader land a Charged Gauntlet hit at 300mph or higher."
+            }
+        },
+        "Special":{
+            "Pylon": {
+                "Description":"Throw a floating pylon that zaps up to 6 nearby enemies for 100% damage. Can be grappled.",
+                "Cooldown": "20s",
+                "Note": "It is possible to spawn multiple pylons through the use of cool down reducing items, but there is an internal cap of three that can be active at any time, the oldest active pylong will be removed."
+            }
+        }
+    }},
+    
+    {"Acrid":{
+        "Passive":{
+            "Poison": {
+                "Description":"Certain attacks Poison enemies, dealing 10% of max HP in damage over 10seconds, at 3 ticks per second (Max HP includes shields when applied). Poison cannot kill enemies and cannot crit.",
+                "Cooldown": "NA",
+                "Note": "Poison damage is affected by armor."
+            },
+            "Blight":{
+                "Description": "Replaces Poison. Attacks that apply Poison apply stacking Blight instead, dealing 60% damage per second.",
+                "Cooldown": "NA",
+                "Note": "Blight ticks 3 times per second for 5 seconds. Blight deals 20% of Acrid's damage stat per tick, or 60% damage per second. Each stack of Blight increases the damage of each tick. Unlocked by the Easy Prey Challenge: as Acrid land the killing blow on 50 total enemies that have 1hp left."
+            }
+        },
+        "Primary":{
+            "Vicious Wounds": {
+                "Description":"Maul an enemy for 200% damage.Every 3rd hit deals 400% damage.",
+                "Cooldown": "None",
+                "Note": ""
+            }
+        },
+        "Secondary":{
+            "Neurotoxin": {
+                "Description":"Spit toxic bile for 240% damage that poisons enemies hit.",
+                "Cooldown": "2s",
+                "Note": ""
+            },
+            "Ravenous Bite":{
+                "Description": "Bite enemy, dealing 310% damage and poisoning them. Deals up to 3x damage to low health enemies.",
+                "Cooldown": "2s",
+                "Note": "Unlocked by the Bad Medicine Challenge: as Acrid land the final blow on a Scavenger."
+            }
+        },
+        "Utility":{
+            "Caustic Leap": {
+                "Description":"Leap into the air, dealing 320% damage, stunning, and poisoning enemies on impact. Leaves a pool of acid that deals 25% damage.",
+                "Cooldown": "6s",
+                "Note": "Has two base charges. Distance scales with movement speed."
+            },
+            "Frenzied Leap":{
+                "Description": "Leap into the air, dealing 550% damage and stunning enemies on impact. Reduce the cooldown by 2s for every enemy hit.",
+                "Cooldown": "10s",
+                "Note": "Has two base charges. Distance scales with movement speed. Unlocked by the Pandemic Challenge: as Acrid inflict Poison 1000 total times."
+            }
+        },
+        "Special":{
+            "Epidemic": {
+                "Description":"Release a deadly poison that deals 100% damage and poisons enemies. The disease continually spreads to up to 20 targets.",
+                "Cooldown": "10s",
+                "Note": ""
+            }
+        }
+    }}
+]

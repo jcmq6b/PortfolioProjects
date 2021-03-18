@@ -1,0 +1,92 @@
+    body{
+            color: aliceblue;
+            text-shadow: 0 0 4px #11181f;
+            background-color: #00527e;
+            background-image: url(tec_background.png);
+            background-size:contain;
+        }
+        #main_wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 2%;
+        }
+        .abilities_container{
+            width: 30%;
+            margin-left: 30px;
+        }
+        #character_wrapper{
+            text-align: center;
+            border: 2px solid white;
+            width: 25%;
+            height: 40%;
+            background-color: #061c40;
+            box-shadow: 0 0 10px 4px #11181f;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        #character_wrapper img{
+            width: 100%;
+        }
+        .ability{
+            text-align: center;
+        }
+        table{
+            color: aliceblue;
+            text-align: center;
+            width: 100%;
+            background-color: #061c40;
+            box-shadow: 0 0 10px 4px #11181f;
+        }
+        tr, td, th{
+            text-align: center;
+            padding: 8px;
+            border: 1px solid aliceblue;
+        }
+        th{
+            font-size: 18px;
+        }
+
+        .ability h3{
+            text-shadow: 2px 2px 7px black;
+        }
+
+        .abilities_container img{
+            border: 2px solid aliceblue;
+/*            margin: 10px;*/
+            width: 80px;
+            height: 80px;
+        }
+        
+        .desc_text{
+            text-align: left;
+        }
+
+        td.unlock_desc_text{
+            text-align: left;
+        }
+    
+        #video_container{
+            position: -webkit-sticky;
+            position: sticky;
+            top: 30%;
+            margin-top: -25%;
+            height: 60%;
+            width: 30%;
+            margin-left: 3%;
+            background-color: #061c40;
+            text-align: center;
+            box-shadow: 0 0 6px 1px #000000;
+            border-radius: 2%;
+            padding: 5px;
+            
+        }
+        video{
+            width: 100%;
+            background-color: black;
+        }
+        button{
+            padding-left: 5%;
+            padding-right: 5%;
+            color: black;
+            content: "Play Clip";
+        }

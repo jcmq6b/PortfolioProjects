@@ -1,0 +1,118 @@
+[
+    {"Commando": {
+        "max_hp": 110,
+        "hp_plvl": 33,
+        "damage": 12,
+        "damag_plvl": 2.4,
+        "regen": 1,
+        "regen_plvl": 0.2,
+        "speed": 7,
+        "armor": 0,
+        "unlock": "none",
+        "unlock_desc": ""
+    }},
+
+    {"Huntress": {
+        "max_hp": 90,
+        "hp_plvl": 27,
+        "damage": 12,
+        "damag_plvl": 2.4,
+        "regen": 1,
+        "regen_plvl": 0.2,
+        "speed": 7,
+        "armor": 0,
+        "unlock": "Warrior Challenge",
+        "unlock_desc": "Reach and complete the 3rd Teleporter event without dying."
+    }},
+
+    {"MUL-T": {
+        "max_hp": 200,
+        "hp_plvl": 60,
+        "damage": 11,
+        "damag_plvl": 2.2,
+        "regen": 1,
+        "regen_plvl": 0.2,
+        "speed": 7,
+        "armor": 12,
+        "unlock": "Verified Challenge",
+        "unlock_desc": "Complete the first Teleporter event 5 times."        
+    }},
+
+    {"Engineer": {
+        "max_hp": 130,
+        "hp_plvl": 39,
+        "damage": 14,
+        "damag_plvl": 2.8,
+        "regen": 1,
+        "regen_plvl": 0.2,
+        "speed": 7,
+        "armor": 0,
+        "unlock": "Engineering Perfection",
+        "unlock_desc": "Complete 30 stages. They may be completed over any number of runs."
+    }},
+
+    {"Artificer": {
+        "max_hp": 110,
+        "hp_plvl": 33,
+        "damage": 12,
+        "damag_plvl": 2.4,
+        "regen": 1,
+        "regen_plvl": 0.2,
+        "speed": 7,
+        "armor": 0,
+        "unlock": "Pause Challenge",
+        "unlock_desc": "'Free the survivor suspended in time'. This is done by going to the Bazaar through the Blue Portal and paying 10 Lunar Coins to the crystal next to the giant newt."
+    }},
+
+    {"Mercenary": {
+        "max_hp": 140,
+        "hp_plvl": 42,
+        "damage": 12,
+        "damag_plvl": 2.4,
+        "regen": 2.5,
+        "regen_plvl": 0.5,
+        "speed": 7,
+        "armor": 20,
+        "unlock": "True Respite Challenge",
+        "unlock_desc": "Obliterate yourself at the Obelisk. This is done by going through the Celestial Portal. The portal will appear after a chat box pops up saying 'A celestial orb has appeared...', this usually happens after the 7th stage."
+    }},
+
+    {"Rex": {
+        "max_hp": 130,
+        "hp_plvl": 39,
+        "damage": 12,
+        "damag_plvl": 2.4,
+        "regen": 1,
+        "regen_plvl": 0.2,
+        "speed": 7,
+        "armor": 20,
+        "unlock": "Power Plant Challenge",
+        "unlock_desc": "'Repair the broken robot with an Escape Pod's Fuel Array'. The Fuel Array is found on the back of the Escape Pod your character arrives in (except for MUL-T or Acrid), interact with it to remove the fuel array which should place it in your equiment slot. While holding the Fuel Array if the player's HP drops below 50% the Fuel Array will break. The player must take the Fuel Rod to the Abbyssal Depths and give it to Rex."
+    }},
+
+    {"Loader": {
+        "max_hp": 160,
+        "hp_plvl": 48,
+        "damage": 12,
+        "damag_plvl": 2.4,
+        "regen": 2.5,
+        "regen_plvl": 0.5,
+        "speed": 7,
+        "armor": 20,
+        "unlock": "Guidance Offline Challenge",
+        "unlock_desc": "Defeat the Alloy Worship Unit boss on the Siren's Call stage, it will be one of the 4th stages (the other is Abyssal Depths)"
+    }},
+
+    {"Acrid": {
+        "max_hp": 160,
+        "hp_plvl": 48,
+        "damage": 15,
+        "damag_plvl": 3.0,
+        "regen": 2.5,
+        "regen_plvl": 0.5,
+        "speed": 7,
+        "armor": 20,
+        "unlock": "...To Be Left Alone Challenge",
+        "unlock_desc": "'Stabilize the Cell in the Void Fields'. The Void Fields are accessed through the Bazaar relm beneath the walkway, if you descend far enough, there is a tunnel dug into the wall that will lead you to a black void portal that takes you to the Void Fields. You will need to activate 9 Void Cells in the Void Fields to complete the challenge."
+    }}
+]

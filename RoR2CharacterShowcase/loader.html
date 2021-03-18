@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Loader Page</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="character_pages.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="load_page_func.js"></script>
+    <script>
+        $(function(){
+            grabAbilities("Loader");
+            grabStats("Loader");
+        });
+    </script>   
+</head>
+    
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div id="main_wrapper">
+        <div id="character_wrapper">
+            <h3>Loader</h3>
+            <img src="Loader/LoaderPic.png" alt="loader_pic">
+            <table id="stat_container">
+                
+            </table>
+            
+        </div>
+        <div class="abilities_container">
+            <div class="ability">
+                <h3>Passive</h3>
+                <table id="passive">
+                </table>
+            </div>
+            
+            <div class="ability">
+                <h3>Primary</h3>
+                <table id="primary">
+                </table>
+            </div>
+
+            <div class="ability">
+                <h3>Secondary</h3>
+                <table id="secondary">
+                </table>
+            </div>
+
+            <div class="ability">
+                <h3>Utility</h3>
+                <table id="utility">
+                </table>
+            </div>
+
+            <div class="ability">
+                <h3>Special</h3>
+                <table id="special">
+                </table>
+            </div>
+        </div>
+        <div id="video_container">
+            <h4>Press Play Clip button to view an ability</h4>
+            <video id="video_box" src="" controls>
+            </video>
+        </div>
+    </div>
+</body>
+</html>

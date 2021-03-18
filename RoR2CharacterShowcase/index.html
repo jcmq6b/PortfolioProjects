@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ROR2 Character Showcase</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+    
+    <style>
+        body{
+/*            https://www.freepik.com/free-photos-vectors/background Background vector created by starline - www.freepik.com*/
+            background-color: #001a27;
+            background-size: cover;
+            background-size: 100% 100%;
+            color: white;
+            text-align: center;
+        }
+        #main_wrapper{
+            text-align: center;
+            height: 100%;
+        }
+        #title{
+            font-size: 3em;
+            font-family: 'Cabin', sans-serif;
+            color: aliceblue;
+            letter-spacing: 0.08em;
+            
+        }
+        #character_wrapper{
+            margin: auto;
+            width: 75%;
+            height: 60%;
+            max-width: 1500px;
+            color: aliceblue;
+            box-shadow: 0 0 6px 2px rgb(0, 0, 0);
+            border-radius: 2%;
+            padding: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+/* https://www.everypixel.com/image-15424274295008406087 */
+            background-image: url(circuit_background.png);
+            background-repeat: no-repeat;
+            background-size: cover;         
+        }
+        .character{
+            border-radius: 4%;
+            box-shadow: 0 0 8px 2px black;
+            width: 15%;
+            min-width: 100px;
+            max-width: 300px;
+            max-height: 400px;
+            text-align: center;
+            margin: 15px;
+            background-color: #cbcbcb;
+            overflow-x: auto;
+        }
+        .character img{
+            width: 80%;
+            max-width: 300px;
+        }
+        .character a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-shadow: 0 0 2px #65caff;
+        }
+        .bottom_info{
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    </style>  
+
+</head>
+    
+<body>
+    <div id="main_wrapper">
+        <div>
+            <h1 id="title">Risk of Rain 2 Character Showcase</h1>
+            <p>Select a character to view their stats and abilities.</p>
+        </div>
+        <div id="character_wrapper">
+            <div id="acrid" class="character">
+                <a href="acrid.html"><h3>Acrid</h3></a>
+                <img src="Acrid/AcridPic.png" alt="acrid_pic">
+            </div>
+            <div id="artificer" class="character">
+                <a href="artificer.html"><h3>Artificer</h3></a>
+                <img src="Artificer/ArtificerPic.png" alt="artificer_pic">
+            </div>
+            <div id="commando" class="character">
+                <a href="commando.html"><h3>Commando</h3></a>
+                <img src="Commando/CommandoPic.png" alt="commando_pic">
+            </div>
+            <div id="engineer" class="character">
+                <a href="engineer.html"><h3>Engineer</h3></a>
+                <img src="Engineer/EngineerPic.png" alt="engineer_pic">
+            </div>
+            <div id="huntress" class="character">
+                <a href="huntress.html"><h3>Huntress</h3></a>
+                <img src="Huntress/HuntressPic.png" alt="huntress_pic">
+            </div>
+            <div id="loader" class="character">
+                <a href="loader.html"><h3>Loader</h3></a>
+                <img src="Loader/LoaderPic.png" alt="loader_pic">
+            </div>
+            <div id="mercenary" class="character">
+                <a href="mercenary.html"><h3>Mercenary</h3></a>
+                <img src="Mercenary/MercenaryPic.png" alt="mercenary_pic">
+            </div>
+            <div id="mul-t" class="character">
+                <a href="mul-t.html"><h3>MUL-T</h3></a>
+                <img src="MUL-T/MUL-TPic.png" alt="MUL-T_pic">
+            </div>
+            <div id="rex" class="character">
+                <a href="rex.html"><h3>Rex</h3></a>
+                <img src="Rex/RexPic.png" alt="rex_pic">
+            </div>
+        </div>
+        <p class="bottom_info">Last updated: 5/8/2020</p>
+    </div>
+</body>
+</html>
