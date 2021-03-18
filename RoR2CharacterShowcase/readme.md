@@ -1,7 +1,7 @@
 # Risk of Rain 2 Character Showcase Website
 ## By: Jessica Murphey
 
-Website Link: https://www.murpheysdomain.com/RoR2CharacterShowcase/index.html
+Website Link: https://www.murpheysdomain.com/RoR2CharacterShowcase/
 
 
 
