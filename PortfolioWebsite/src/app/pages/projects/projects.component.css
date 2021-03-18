@@ -34,7 +34,7 @@ a{
 
 .title{
     text-align: center;
-    padding-top: 40px;
+    padding-top: 20px;
     margin-bottom: 40px;
 }
 
@@ -47,12 +47,12 @@ h1{
     text-shadow: 1px 1px 1px rgb(255, 243, 110);
 }
 
-/* .project_content{
-    min-height: 100%;
-} */
+.project_content{
+    padding-bottom: 10px;
+}
 
 .description{
-    margin: 20px 0 20px 0;
+    margin: 10px 0 20px 0;
     width: 95%;
     max-height: 35%;
     overflow-y: auto;
@@ -66,14 +66,18 @@ h1{
     width: 100%;
 }
 
-.app_picture{
+.app_web_picture{
     padding: 5px;
-    width: 590px;
-    height: 100%;
+    width: 600px;
 }
 
-.app_picture img{
+.app_em_picture{
+    width: 290px;
+}
 
+img{
+    width: 100%;
+    height: 100%;
 }
 
 #bet_tracker, #showcase, #pr_tracker{
