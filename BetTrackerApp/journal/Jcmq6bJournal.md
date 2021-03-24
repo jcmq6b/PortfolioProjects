@@ -2,7 +2,7 @@
 <br>
 
 ## My App: Bet Tracker
-- Link to code running on my web server: https://www.murpheysdomain.com/Challenges/BetTracker/home
+- Link to code running on my web server: https://www.murpheysdomain.com/BetTrackerApp/
 - The app I decided to make was a Bet Tracker application. I wanted to make this because me and my friends typically all have a bunch of friendly bets going for random stuff and it gets really hard to keep track of who owes who and how much. 
 ### Application Overview
 - The application opens up to a Person list page where you can add new people you want to make bets with. 
@@ -18,6 +18,64 @@
     - Ionic Item Sliding: https://ionicframework.com/docs/v3/api/components/item/ItemSliding/
     - Ionic Slider Example: https://edupala.com/ionic-slider/
     - Ionic Slider Example 2: https://www.joshmorony.com/ionic-2-how-to-create-a-sliding-delete-button-for-lists/
+
+<br>
+
+## Components
+
+### Home Page
+- This page is where the user adds new people they want to create bets with. 
+- By clicking on the Add Person button an alert will appear with an input for the person's name
+- The application will double check that the field is not empty and that the name is not already in use
+- After creating the person the user has the ability to edit by clicking on the pencil icon on the right of the list, as well as the option to delete by clicking on the trashcan on the right.
+- Clicking on the list item for the person takes the user to the Current Bet Page
+
+![current](../screenshots/currentBets.PNG)
+![addPerson](../screenshots/addPerson.PNG)
+![editPerson](../screenshots/editPerson.PNG)
+
+
+### Current Bet Page
+- This page is where the user can view the bets they currently have ongoing with the selected person.
+- The top portion has a back button that takes the user back to the home page on the left.
+- And on the right there is a button that takes the user to the Previous Bet Page.
+- In the middle top it displays the selected person's name and how much money they owe/are owed.
+- The bet list items show the title, amount and description
+- The user has the option to complete and delete by either swiping left or clicking the arrow to show the complete/delete options
+- When completing the user is prompted to choose if they won or lost the bet, the bet is then removed from the current bets view and is placed into the previous bets view and the total at the top is updated.
+
+![current](../screenshots/currentBets.PNG)
+![addPerson](../screenshots/currentBetsSwipe.PNG)
+
+
+### Add Bet Page
+- This page is a form for the user to create a new bet.
+- The form takes a title, amount, and description
+- At the bottom there are two buttons one to cancel and one to create
+- The error checking involved is that: The title must be unique, the amount must be a number, and all the inputs must be filled out, otherwise the create button will not be enabled. Text will pop up below the inputs for the specific errors for the title and amount.
+
+![newBetPage](../screenshots/newBetPage.PNG)
+![addPerson](../screenshots/addBetErrorCheck.PNG)
+
+
+### Previous Bet Page
+- This page shows the previous bets that the user has had with the selected person.
+- At the top there is a back button that takes the user back to the current bets page for the selected person.
+- The selected person's name is also displayed at the top
+- The bets list items show the bet title, amount, result, and description
+- The user has the option to delete the past bet by swiping to the left or pressing the arrow
+- If the user deletes the bet it is removed from the previous bets and the total for that person is updated. (So if they earned 20 dollars on the bet then delted it, 20 dollars would be removed from the total)
+
+![pastBets](../screenshots/pastBets.PNG)
+![addPerson](../screenshots/pastBetsSwipe.PNG)
+
+
+### Page Not Found
+- This is just a simple page that contains a link back to the home page
+
+![pagenotfound](../screenshots/pageNotFound.PNG)
+
+<br>
 
 <br>
 
@@ -39,57 +97,6 @@ Resoources I used to figure this out
 - A helpful source I found on researching the differences between Hybrid and Native applications
     - https://clearbridgemobile.com/mobile-app-development-native-vs-web-vs-hybrid/#:~:text=Hybrid%20apps%20are%20much%20slower,saved%20with%20native%20app%20development.
 
-<br>
-
-## Components
-
-### Home Page
-- This page is where the user adds new people they want to create bets with. 
-- By clicking on the Add Person button an alert will appear with an input for the person's name
-- The application will double check that the field is not empty and that the name is not already in use
-- After creating the person the user has the ability to edit by clicking on the pencil icon on the right of the list, as well as the option to delete by clicking on the trashcan on the right.
-- Clicking on the list item for the person takes the user to the Current Bet Page
-
-![current](../screenshots/currentBets.PNG)
-![addPerson](../screenshots/addPerson.PNG)
-![editPerson](../screenshots/editPerson.PNG)
-
-### Current Bet Page
-- This page is where the user can view the bets they currently have ongoing with the selected person.
-- The top portion has a back button that takes the user back to the home page on the left.
-- And on the right there is a button that takes the user to the Previous Bet Page.
-- In the middle top it displays the selected person's name and how much money they owe/are owed.
-- The bet list items show the title, amount and description
-- The user has the option to complete and delete by either swiping left or clicking the arrow to show the complete/delete options
-- When completing the user is prompted to choose if they won or lost the bet, the bet is then removed from the current bets view and is placed into the previous bets view and the total at the top is updated.
-
-![current](../screenshots/currentBets.PNG)
-![addPerson](../screenshots/currentBetsSwipe.PNG)
-
-### Add Bet Page
-- This page is a form for the user to create a new bet.
-- The form takes a title, amount, and description
-- At the bottom there are two buttons one to cancel and one to create
-- The error checking involved is that: The title must be unique, the amount must be a number, and all the inputs must be filled out, otherwise the create button will not be enabled. Text will pop up below the inputs for the specific errors for the title and amount.
-
-![newBetPage](../screenshots/newBetPage.PNG)
-![addPerson](../screenshots/addBetErrorCheck.PNG)
-
-### Previous Bet Page
-- This page shows the previous bets that the user has had with the selected person.
-- At the top there is a back button that takes the user back to the current bets page for the selected person.
-- The selected person's name is also displayed at the top
-- The bets list items show the bet title, amount, result, and description
-- The user has the option to delete the past bet by swiping to the left or pressing the arrow
-- If the user deletes the bet it is removed from the previous bets and the total for that person is updated. (So if they earned 20 dollars on the bet then delted it, 20 dollars would be removed from the total)
-
-![pastBets](../screenshots/pastBets.PNG)
-![addPerson](../screenshots/pastBetsSwipe.PNG)
-
-### Page Not Found
-- This is just a simple page that contains a link back to the home page
-
-![pagenotfound](../screenshots/pageNotFound.PNG)
 
 <br>
 
