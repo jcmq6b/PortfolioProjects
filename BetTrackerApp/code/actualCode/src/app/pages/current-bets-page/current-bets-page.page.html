@@ -1,18 +1,18 @@
 <ion-header>
   <ion-item>
     <ion-button (click)="backButton()"><ion-icon slot="icon-only" name="arrow-back"></ion-icon></ion-button>
-    <ion-title class="ion-text-center">{{this.selectedPerson}}</ion-title>
+    <ion-title id="name" class="ion-text-center">{{this.selectedPerson}}</ion-title>
     <ion-button (click)="previousBets()">Bet History</ion-button>
   </ion-item>
   <ion-item>
-    <ion-label class="ion-text-center">{{this.totalTitle}}: ${{this.getTotalTitle(this.selectedPerson)}}</ion-label>
+    <ion-label id="owed">{{this.totalTitle}}: ${{this.getTotalTitle(this.selectedPerson)}}</ion-label>
   </ion-item>
 </ion-header>
 
 <ion-content>
   <ion-item>
-    <ion-label>Current Bets:</ion-label>
-    <ion-button (click)="addBetPage()">Add New Bet</ion-button>
+    <ion-label id="title">Current Bets</ion-label>
+    <ion-button (click)="addBetPage()">New Bet</ion-button>
   </ion-item>
   <ion-list *ngFor="let bet of this.getBetArray()">
     <ion-item *ngIf="bet.active">

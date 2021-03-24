@@ -8,16 +8,31 @@
 
 <ion-content [fullscreen]="true">
   <ion-item>
-    <ion-label>Click on a person to view their bet page</ion-label>
-    <ion-button (click)="presentAddPersonAlert()">Add Person</ion-button>
+    <ion-label>Click Person To View Bet Page</ion-label>
+    <ion-button (click)="presentAddPersonAlert()">New Person</ion-button>
   </ion-item>
   
 
-  <ion-list *ngFor="let person of this.personArray">
+  <ion-list #list *ngFor="let person of this.personArray">
+    <ion-item-sliding #slidingItem>
     <ion-item>
-      <ion-label (click)="loadCurrentBets(person.name)">{{person.name}}</ion-label>
-      <ion-icon class="ion-margin-end" name="pencil-outline" (click)="presentEditPersonAlert(person)"></ion-icon>
-      <ion-icon name="trash-outline" (click)="presentDeletePersonAlert(person.name)"></ion-icon>
+      <ion-label class="name" (click)="loadCurrentBets(person.name)">{{person.name}}</ion-label>
+      <div class="open_slid_div" (click)="open(slidingItem, list)">
+        <ion-icon name="chevron-back"></ion-icon>
+      </div>
     </ion-item>
+
+    <ion-item-options side="end">
+      <ion-button (click)="presentEditPersonAlert(person)" color="primary" expand="full" class="siding">
+        <ion-icon name="pencil-outline"></ion-icon>
+        <strong>Edit</strong>
+      </ion-button>
+      <ion-button (click)="presentDeletePersonAlert(person.name)" color="danger" expand="full" class="siding">
+        <ion-icon name="trash"></ion-icon>
+        <strong>Delete</strong>
+      </ion-button>
+    </ion-item-options>
+  </ion-item-sliding>
   </ion-list>
+
 </ion-content>

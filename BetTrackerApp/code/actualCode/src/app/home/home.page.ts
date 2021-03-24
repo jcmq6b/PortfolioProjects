@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { PersonDataService } from 'src/app/services/person-data.service'
 import { PersonData} from 'src/app/interfaces/person-data'
 import { Bets } from 'src/app/interfaces/bets'
-import{ AlertController } from '@ionic/angular'
+import{ AlertController, IonList } from '@ionic/angular'
 import { Router} from '@angular/router';
+import { IonItemSliding } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -159,7 +160,21 @@ export class HomePage {
       }else{
         alert("Did NOT edit name. The name must not be empyt and must be unique!");
       }
-      
+    }
+  }
+
+
+  //clicking away closes it
+  //cant figure out how to make the .close() function work
+  async open(itemSlide: IonItemSliding, list: IonList){
+    console.log("open called");
+    let percent = await itemSlide.getSlidingRatio();
+    if(percent > 0){
+      list.closeSlidingItems();
+      console.log("closing");
+    }else{
+      itemSlide.open("end");
+      console.log("opening");
     }
   }
 }
