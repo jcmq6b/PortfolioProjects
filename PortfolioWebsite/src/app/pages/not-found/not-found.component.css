@@ -1,0 +1,10 @@
+div{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#link{
+    text-decoration: underline;
+    font-size: 150%;
+    color: rgb(15, 42, 121);
+}
