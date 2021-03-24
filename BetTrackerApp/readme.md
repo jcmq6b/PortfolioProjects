@@ -1,138 +1,107 @@
-# Challenge 5: Hybrid Mobile Applications
+# Bet Tracker Application by Jessie Murphey
+<br>
 
-**NOTE:** If there are differences between this README.md or the Requirements.md with the Canvas assignment page. Then the Canvas assignment page will superseded the README or the Requirements.md pages. These pages are provided for convenience but the Canvas page is the main requirements resource.
+## My App: Bet Tracker
+- Link to code running on my web server: https://www.murpheysdomain.com/BetTrackerApp/
+- The app I decided to make was a Bet Tracker application. I wanted to make this because me and my friends typically all have a bunch of friendly bets going for random stuff and it gets really hard to keep track of who owes who and how much. 
+### Application Overview
+- The application opens up to a Person list page where you can add new people you want to make bets with. 
+- By clicking on the person in the list it takes you to the Current Bets page, this page at the top shows the person's name as well as the total amount owed/earned, and below it shows any active/ongoing bets. 
+- From the Current Bets page the user can create a new bet, which takes them to a bet forum after completing it takes you back to the Current Bets page. 
+- They can also conclude the bet on the Current Bets page by swiping the list to the left to open up options of complete or delete, for the bet. 
+- Also from the Current Bets page the user can click on a button at the top to be taken to the Previous Bets page that is a list that shows the past bets you've had with that person and who won/lost.
 
-_Due Friday, October 29 at 11:59:00pm_
+- Almost all of my pages are built around the Ionic List Componenet so a lot of the research I did to create this project revolved around that.
+- Some Ionic List resources I used:
+    - Ionic List frameworks: https://ionicframework.com/docs/api/list
+    - Ionic List frameworks: https://www.tutorialspoint.com/ionic/ionic_lists.htm
+    - Ionic Item Sliding: https://ionicframework.com/docs/v3/api/components/item/ItemSliding/
+    - Ionic Slider Example: https://edupala.com/ionic-slider/
+    - Ionic Slider Example 2: https://www.joshmorony.com/ionic-2-how-to-create-a-sliding-delete-button-for-lists/
 
-_Submit through GitHub Classroom **AND** Canvas_
+<br>
 
-GitHub Classroom Link: [https://classroom.github.com/a/Cptr0J4X](https://classroom.github.com/a/Cptr0J4X)
+## Components
 
-For this challenge, you will design and develop a hybrid mobile application that you choose. The project must be the same technical level or higher and meeting the same requirements or better/more as listed here: [Hybrid App Idea](https://missouri.instructure.com/courses/42879/pages/hybrid-app-idea?module_item_id=2199275)
+### Home Page
+- This page is where the user adds new people they want to create bets with. 
+- By clicking on the Add Person button an alert will appear with an input for the person's name
+- The application will double check that the field is not empty and that the name is not already in use
+- After creating the person the user has the ability to edit by clicking on the pencil icon on the right of the list, as well as the option to delete by clicking on the trashcan on the right.
+- Clicking on the list item for the person takes the user to the Current Bet Page
 
-**Help with Decision:** If you need help on making a decision then let us know. The best project idea is something that interests you!
+![current](./screenshots/currentBets.PNG)
+![addPerson](./screenshots/addPerson.PNG)
+![editPerson](./screenshots/editPerson.PNG)
 
-## Getting Started and GitHub Submission Link
 
-To start the challenge, go to the GitHub Classroom link posted above.
+### Current Bet Page
+- This page is where the user can view the bets they currently have ongoing with the selected person.
+- The top portion has a back button that takes the user back to the home page on the left.
+- And on the right there is a button that takes the user to the Previous Bet Page.
+- In the middle top it displays the selected person's name and how much money they owe/are owed.
+- The bet list items show the title, amount and description
+- The user has the option to complete and delete by either swiping left or clicking the arrow to show the complete/delete options
+- When completing the user is prompted to choose if they won or lost the bet, the bet is then removed from the current bets view and is placed into the previous bets view and the total at the top is updated.
 
-Link your account, clone the repository, `cd` into the `code` directory, do an `npm install`, create a new `dev` branch, and create your application.
+![current](./screenshots/currentBets.PNG)
+![addPerson](./screenshots/currentBetsSwipe.PNG)
 
-Make sure you start a new development branch. The master branch will be the production branch. At the end, when you are finished, do the final commit to development, and the final merge to master then push the master branch back up for grading. You can also push up your development branch so we can see all your commits.
 
-**If you work the entire time on master, you will get points deducted.** This is not a good industry practice.
+### Add Bet Page
+- This page is a form for the user to create a new bet.
+- The form takes a title, amount, and description
+- At the bottom there are two buttons one to cancel and one to create
+- The error checking involved is that: The title must be unique, the amount must be a number, and all the inputs must be filled out, otherwise the create button will not be enabled. Text will pop up below the inputs for the specific errors for the title and amount.
 
-After pushing back to `origin` for the final submission, I recommend to go to your remote repository on GitHub, download the repository which will give you a zip file of your repo on your local machine, then submit that zip to canvas. The challenge submission will require both on GitHub and Canvas.
+![newBetPage](./screenshots/newBetPage.PNG)
+![addPerson](./screenshots/addBetErrorCheck.PNG)
 
-**Note:** Make sure the Canvas submission has all of the elements that are included in your GitHub submission which includes a link to the server, the raw code, the journal, and the Android and/or iOS version of the application. **_Make sure the canvas submission is up-to-date._**
 
-## Overview
+### Previous Bet Page
+- This page shows the previous bets that the user has had with the selected person.
+- At the top there is a back button that takes the user back to the current bets page for the selected person.
+- The selected person's name is also displayed at the top
+- The bets list items show the bet title, amount, result, and description
+- The user has the option to delete the past bet by swiping to the left or pressing the arrow
+- If the user deletes the bet it is removed from the previous bets and the total for that person is updated. (So if they earned 20 dollars on the bet then delted it, 20 dollars would be removed from the total)
 
-- These are some of the popular Hybrid and Cross-Platform frameworks available: [https://www.websoptimization.com/blog/hybrid-mobile-app-frameworks/](https://www.websoptimization.com/blog/hybrid-mobile-app-frameworks/)
-- For this challenge, I want you to use Ionic so you can deploy your application on a mobile device.
-- You will write about using hybrid apps compared to using native apps (strengths, limitations, usability) in the journal
-- You will also write about the differences between hybrid apps, compared to cross-platform apps, and compared to progressive web apps, (the development process, strengths, limitations, usability) in the journal
-  - Here is a good resource to read: [https://itcraftapps.com/blog/cross-platform-vs-native-vs-hybrid-vs-pwa-development/#1](https://itcraftapps.com/blog/cross-platform-vs-native-vs-hybrid-vs-pwa-development/#1)
-- Ionic's own tutorial is at: [https://ionicframework.com/docs](https://ionicframework.com/docs)
+![pastBets](./screenshots/pastBets.PNG)
+![addPerson](./screenshots/pastBetsSwipe.PNG)
 
-## Requirements
 
-Your challenge is to:
+### Page Not Found
+- This is just a simple page that contains a link back to the home page
 
-- Design and develop a hybrid mobile application that you choose. The project must be the same technical level or higher and meeting the same requirements or better/more as listed here: [Hybrid App Idea](https://missouri.instructure.com/courses/42879/pages/hybrid-app-idea?module_item_id=2199275)
-- You must post your idea and resources you used to help you form your idea here in this discussion: [Shared Hybrid App Ideas](https://missouri.instructure.com/courses/42879/discussion_topics/752613) (20 points)
-- The goal of this project is for you to combine the things that you've learned this semester into a working and useful application.
-- The best project idea is something that interests you!
-- This is also an opportunity to develop something that you can put in your portfolio to show a prospective employer.
-- The application should not be trivial, but it should also not be so big and complex that you are unable to finish and test it.
-- Now take this idea and build an Ionic application then transform it into a mobile application using Ionic. Use tutorials online to help you get the environment setup and how to create a mobile application for production.
-- To see it run, you can launch the app on your phone.
-- If you do not have a mobile device, you can use Android Studio's emulator or if you have a mac you can use Xcode's emulator.
-- Your code will be graded on an actual mobile device so you will need to submit the actual compiled version of the app
-- For android it is usually an `.apk` file or an `.aab` file
-- For iOS it is usually an `.ipa` file
-- If you can submit your application to the Google Play Store or the Apple App Store then you can get bonus points. For iOS, there are ways to submit your application without purchasing a license, for example you could use TestFlight and other various methods listed in the documentation.
-- Your website will also work on a web browser like chrome, since it is developed using HTML, CSS, and Javascript (Essentially it is an Angular application using Ionic's UI Components and Application Wrapper). So for some updates you can simply use your browser using the command `ionic serve`
-- The application should use responsive web design. You should use [Ionic's UI Components ](https://ionicframework.com/docs/components) but depending on what you are implementing, you may need to implement some of them yourself so make sure it is responsive across multiple types of devices.
-- You will want your application to look good across multiple devices so you should test them on multiple devices
-- Try running the mobile device emulator for a phone on Android Studio or XCode, then try testing your application for tablets, your app should look good across multiple devices.
-- **Note:** If you run your application in Chrome's emulator to see what it looks like on different devices, that will change the viewport width, but it will not look like a native application. The only way to truly test is through the emulator or putting it on your actual device.
-- If you want to make quick tests you can test in the browser, but remember we will be grading on an actual mobile device, so make sure your final tests are on a mobile device. You don't want to test the entire time in the browser and then come to find out your code worked and looked fine in the browser but does not work on a mobile device.
-- Lastly, you will take what you did, put it on your instance, then submit your code, comparison file, and Android and/or iOS version of the application for grading.
-- You can put an ionic app on the server similar to how you put an Angular application on the server by using the `ionic build` command. You will want to look at the documentation to make sure you are running the command properly.
+![pagenotfound](./screenshots/pageNotFound.PNG)
 
-**Note:** If you need help selecting an idea, you can look here for help: [Hybrid App Idea](https://missouri.instructure.com/courses/23851/pages/hybrid-app-idea)
+<br>
 
-**Note:** When we are grading the assignments, we will run it on a mobile device, so you will want to make sure you build your project using responsive web design with Ionic UI Components and your own styles so the content on the page resizes itself and looks good on many mobile devices (phones, tablets, etc.). Make sure you test this.
+<br>
 
-## Application Minimum Requirements
+## Problems and Helpful Sources
+- I needed help creating an ion alert to grab data
+https://blog.jamibot.com/ionic-4-alert
 
-- Build a hybrid/cross-platform/progressive-web application
-- The app must have more than one page/component
-- The app must use proper routing techniques
-- The app must collect user input
-- The app must error check user input
-- The app must be implemented in the proper MVC architecture
-- The app must use interfaces for types and service files for data storage and data manipulation
-- The app must have data persistence either client-side or server-side
-- The layout and design of the user interface is up to you
-  - Whatever you choose should be a well-organized, thoughtful, aesthetically pleasing, and a useable interface or an interface that logically makes sense. The layout should look like you made intentional choices and are in control of their placement. This means the layout should not be a disorganized mess that is a result of not knowing how to implement the user interface, layout, and/or code in a meaningful way.
-- The app must use reactive forms
-- The app must be responsive and work on several device types
-  - desktop
-  - tablet
-  - and phone
-- The app must follow best practices
-  - Do not work on `master`
-  - Well-Structured UI and code
-- Your application should have data
-  - If the TAs open up a blank application, then points will be deducted
-  - Your application should have some "default" data similar to MVC challenge so the TAs can see what you built without having to enter a lot of data manually
-- Overall Purpose
-  - The web application you build is not to be trivial in simply meeting the technical requirements set forth in this document. Yes, you are to meet the requirements but you are also to build a web application that has a purpose and delivers functionality or capability. The requirements are parameters to be used in design and implementation of the application; they are not intended to be the end product. You should build a web application that you would be happy to show to a prospective employer or client. You should also make sure that you can complete the development by the due date.
+- Had a lot of trouble getting the Current Bets Page to re-load the data after adding a new bet, I had to use the NavController to navigate to the root of the page because it was cacheing the page on router return making the new data not show up unless you refreshed.
+- Resources I used to figure this out:
+    - https://ionicframework.com/docs/v3/api/navigation/NavController/
+    - https://stackoverflow.com/questions/51684430/ionic-4-setroot-with-angular-router
+    - https://medium.com/@paulstelzer/ionic-4-and-the-lifecycle-hooks-4fe9eabb2864
 
-## What and Where to Submit
+- When trying to build my app on the android studio platform I kept getting the error " Failed to install the following Android SDK packages as some licences have not been accepted." I eventually had to just re-install/update my SDK manager and make sure I clicked accept on all agreements again.
+Resoources I used to figure this out
+- https://stackoverflow.com/questions/54273412/failed-to-install-the-following-android-sdk-packages-as-some-licences-have-not
+- https://developer.android.com/studio/intro/update.html#download-with-gradle
 
-**For GitHub:**
+- A helpful source I found on researching the differences between Hybrid and Native applications
+    - https://clearbridgemobile.com/mobile-app-development-native-vs-web-vs-hybrid/#:~:text=Hybrid%20apps%20are%20much%20slower,saved%20with%20native%20app%20development.
 
-1. Raw Code
-2. Journal with URL to your instance, Hybrid/Native comparison, and problems/solutions you faced with references
-3. Andriod/iOS version of App
-   - If you have a Mac you can submit either Android or iOS (Whichever you prefer).
-   - If you are on a Windows, you will most likely only be able to submit an Android version due to OS limitations.
-   - The android extension for apps is `.apk` or `.aab`
-   - The iOS extension for apps is `.ipa`
-4. Screenshots of your application running with the system clock.
-   - Take screenshots of ALL your finished code
-   - The system clock must contain the date/time to be valid
-   - **Note:** Link the screenshots in your journal as in previous challenges
 
-**For Canvas:**
+<br>
 
-1. Submit your URL to your instance using a "URL Submission" type
-2. Then click on `Resubmit`, download your GitHub repository after your final submission and submit that zip file on Canvas and named it `<Pawprint>IonicF20.zip` where you replace `<Pawprint>` with your actual pawprint
+## Hybrid vs Native
 
-**NOTE:** For canvas, you may submit two different submissions, the first submission will be a URL submission, where you will copy and paste your URL, then click submit. After the submission is successful, you will click on the big blue button called "Re-submit assignment", then do a second submission for a file upload. You will upload a zip file from your final GitHub submission. On your end it will look like you only submitted the zip file but on our end we will see both submissions.
+Hybrid apps can work across multiple platforms, they are a combination of a native app and a web app. A hybrid app is still built with HTML CSS and Javascript but can also run on mobile devices. Some advantages to hybrid apps are that you dont need a web browser, hybrid apps have acess to devices' interal APIs and hardware, and only one codebase is needed. Some disadvantages to hybrid application development is that hybrid apps are slower than native apps, and you are dependent on third-party platforms to deploy the applications wrapper.
 
-## Notes:
-
-1. There is a `code` directory in the GitHub classroom template, this is where your raw code will go. Make sure you do not submit any build code here.
-2. There is an `apps` directory in the GitHub classroom template, this is where your actual app files will go. If you develop iOS it will be an `.ipa` file, if you develop Android it will be an `.apk` or `.aab` file.
-3. There is a `journal` directory, this is where your markdown `.md` file will go for the journal. Please link your screenshots in the journal as in previous challenges. Place your URL link in the journal. As well as your Hybrid/Native comparison, and any problems/solutions you faced with references on how you overcame them.
-4. There is a `screenshots` directory, you can place your screenshots there, but please link them in your journal.
-
-## Help
-
-If there is anything unclear about what you need to do please let me or the TAs know. If you need help, office hours are located under Modules -> Course Information -> Office Hours and TA Information
-
-## Due date/time
-
-This challenge will be **due at 11:59:00PM on Friday, October 29**. Therefore, you will have approximately 1 week to complete this assignment. This includes pushing your code to GitHub classroom, submitting the downloaded zip from GitHub on Canvas, and posting the discussion.
-
-**NOTE:** Remember to complete the discussion board.
-**NOTE:** Remember to submit link and zip file on Canvas
-
----
-
-> © 2020 Professor Wergeles. All rights reserved.
-> _This document is provided with the materials for an educational course and are meant for personal use by the student while participating in the course and is not to be distributed to others._
+Native moblie applications are built for specific platforms and are written in languages that the platform accepts, like swift/Objective-C for iOS and Java/Kotlin for Android. Native applications are also built using the specific IDE for the selected OS. Some advantages to native aplications are that they deliver the best performance compared to web and hybrid applications, they recieve full support from their respective app stores, user experience is typically better because the application is built for the specific UI and OS it is running on. Some disadvantages of native applications is that they use difficult programming languages that require experienced developers, expenses to create the application are usually higher upfront, and they are not always the best option for simple applications.
