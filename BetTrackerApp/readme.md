@@ -4,6 +4,8 @@
 ## My App: Bet Tracker
 - Link to code running on my web server: https://www.murpheysdomain.com/BetTrackerApp/
 - The app I decided to make was a Bet Tracker application. I wanted to make this because me and my friends typically all have a bunch of friendly bets going for random stuff and it gets really hard to keep track of who owes who and how much. 
+- All of the screenshots below are from the web application, Ionic applications are hybrid, but they do look better in a mobile application form
+- **To view how the application works check out this video preview I made https://youtu.be/DmPCFizjML4**
 ### Application Overview
 - The application opens up to a Person list page where you can add new people you want to make bets with. 
 - By clicking on the person in the list it takes you to the Current Bets page, this page at the top shows the person's name as well as the total amount owed/earned, and below it shows any active/ongoing bets. 
