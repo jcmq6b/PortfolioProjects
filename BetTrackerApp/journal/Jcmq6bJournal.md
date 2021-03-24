@@ -1,4 +1,4 @@
-# Challenge 5: Hybrid Mobile Application by Jessie Murphey
+# Bet Tracker Application by Jessie Murphey
 <br>
 
 ## My App: Bet Tracker
