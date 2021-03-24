@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Add New Bet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="betForm" (ngSubmit)="addBet()">
+    <ion-item>
+      <ion-label>Title: </ion-label>
+      <ion-input type="text" formControlName="title" placeholder="Enter title (must be unique)"></ion-input>
+    </ion-item>
+    <div *ngIf="isTitleTaken()">
+      <ion-text color="danger">Title already in use</ion-text>
+    </div>
+
+    <ion-item>
+      <ion-label>Amount: </ion-label>
+      <ion-input type="text" formControlName="amount" placeholder="Enter amount"></ion-input>
+    </ion-item>
+    <div *ngIf="isNumber()">
+      <ion-text color="danger">Amount must be numbers</ion-text>
+    </div>
+
+    <ion-item>
+      <ion-label>Description: </ion-label>
+      <ion-input type="text" formControlName="description" placeholder="Enter bet description"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-button (click)="backPage()">Cancel</ion-button>
+      <ion-button (click)="addBet()" [disabled]="!betForm.valid">Create</ion-button>
+    </ion-item>
+  </form>
+</ion-content>

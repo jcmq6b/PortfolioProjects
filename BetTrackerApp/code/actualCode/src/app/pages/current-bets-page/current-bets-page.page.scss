@@ -1,0 +1,19 @@
+ion-col{
+    // white-space: normal;
+    display: block;
+    
+}
+
+ion-button.siding{
+    height: 100%;
+}
+
+ion-col.description{
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ion-col.btmborder{
+    border-bottom: 2px solid rgb(49, 49, 49);
+}

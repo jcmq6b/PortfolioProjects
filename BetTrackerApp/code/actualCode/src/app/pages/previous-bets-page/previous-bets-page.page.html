@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-item>
+    <ion-button (click)="backButton()"><ion-icon slot="icon-only" name="arrow-back"></ion-icon></ion-button>
+    <ion-title class="ion-text-center">{{this.selectedPerson}}</ion-title>
+  </ion-item>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Previous Bets:</ion-label>
+  </ion-item>
+  <ion-list *ngFor="let bet of this.getBetArray()">
+    <ion-item *ngIf="!bet.active">
+      <ion-item-sliding #slidingItem>
+        <ion-item>
+          <ion-grid>
+            <ion-row>
+              <ion-col class="btmborder">
+                Title: {{bet.title}}
+              </ion-col>
+              <ion-col class="btmborder">
+                Amount: ${{(bet.amount)}}
+              </ion-col>
+              <ion-col class="btmborder">
+                Result: {{bet.conclusion}}
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="auto">
+                Description:
+              </ion-col>
+              <ion-col text-wrap class="description">
+                {{bet.description}}
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <div (click)="open(slidingItem)">
+            <ion-icon name="chevron-back"></ion-icon>
+          </div>
+        </ion-item>
+
+        <ion-item-options side="end">
+          <ion-button (click)="deleteBet(bet)" color="danger" expand="full" class="siding">
+            <ion-icon name="trash"></ion-icon>
+            <strong>Delete</strong>
+          </ion-button>
+        </ion-item-options>
+
+      </ion-item-sliding>
+    </ion-item>
+  </ion-list>
+</ion-content>

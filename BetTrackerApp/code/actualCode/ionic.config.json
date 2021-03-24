@@ -1,0 +1,7 @@
+{
+  "name": "BetTrackerApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
