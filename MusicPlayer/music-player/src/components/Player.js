@@ -1,16 +1,44 @@
 //This component is the controls for the music player
 
-import React, {useRef, useState} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {
     faPlay,faAngleLeft, faAngleRight, faPause
 } from '@fortawesome/free-solid-svg-icons'
 
-const Player = ({currentSong,isPlaying,setIsPlaying}) => {
-    //Ref (to access html elements)
-    const audioRef = useRef(null);
+const Player = ({
+    timeUpdateHandler,
+    songInfo,
+    setSongInfo,
+    audioRef, 
+    currentSong,
+    isPlaying,
+    setIsPlaying,
+    songs,
+    setCurrentSong,
+    setSongs,
+}) => {
+    //UseEffect
+    //Changes the active element of the songs every time currentSong changes
+    useEffect(()=>{
+        const newSongs = songs.map((stateSong)=>{
+            if(stateSong.id === currentSong.id){
+                return{
+                    ...stateSong,
+                    active: true,
+                }
+            }else{ //Changes all but the selected song's active to false
+                return{
+                    ...stateSong,
+                    active: false,
+                }
+            }
+        });
+        setSongs(newSongs); //Updates state array
+    },[currentSong]);
 
-    //Event Handlers
+    //Event Handlers:
+    //Plays and pauses song when button is clicked, updates button icon
     const playSongHandler = () =>{
         if(isPlaying){
             audioRef.current.pause();
@@ -20,13 +48,28 @@ const Player = ({currentSong,isPlaying,setIsPlaying}) => {
             setIsPlaying(!isPlaying);
         }
     };
-
-    //Function to update the start time and end time of the song playing
-    const timeUpdateHandler = (event) =>{
-        const current = event.target.currentTime;
-        const duration = event.target.duration;
-        setSongInfo({...songInfo, currentTime: current, duration: duration})
+    //Changes time when slider is dragged
+    const dragHandler = (event) =>{
+        audioRef.current.currentTime = event.target.value; //Updates where the song is playing
+        setSongInfo({...songInfo, currentTime: event.target.value}); //Update start time numbers
     };
+
+    //Changes the song in the library backwards or forwards (depending on direction)
+    const skipTrackHandler = (direction) =>{
+        //grab current index of current song
+        let currentIndex = songs.findIndex((song)=> song.id==currentSong.id);
+        if(direction==='skip-forward'){
+            setCurrentSong(songs[(currentIndex+1)%songs.length])
+        }
+        if(direction==='skip-back'){
+            if((currentIndex-1)%songs.length === -1){
+                setCurrentSong(songs[songs.length-1]);
+                return;
+            }
+            setCurrentSong(songs[(currentIndex-1)%songs.length])
+        }
+    };
+
 
     //Formats the start/end time of the song to minutes:seconds
     const getTime = (time) =>{
@@ -34,18 +77,13 @@ const Player = ({currentSong,isPlaying,setIsPlaying}) => {
             Math.floor(time/60) + ":" + ("0" + Math.floor(time%60)).slice(-2)
         )
     };
-    
-    //Changes time when slider is dragged
-    const dragHandler = (event) =>{
-        audioRef.current.currentTime = event.target.value; //Updates where the song is playing
-        setSongInfo({...songInfo, currentTime: event.target.value}); //Update start time numbers
-    };
 
-    //State
-    const [songInfo, setSongInfo] = useState({
-        currentTime: 0,
-        duration: 0,
-    });
+    //When changing songs it auto plays them if a song was currently being played before the switch
+    const autoPlayHandler = () =>{
+        if(isPlaying){
+            audioRef.current.play();
+        }
+    };
 
     return(
         <div className="player">
@@ -63,6 +101,7 @@ const Player = ({currentSong,isPlaying,setIsPlaying}) => {
             </div>
             <div className="play-control">
                 <FontAwesomeIcon
+                    onClick={()=> skipTrackHandler('skip-back')}//Arrow function so it doesn't run instantly
                     className="skip-back" 
                     size="2x" 
                     icon={faAngleLeft}
@@ -74,15 +113,17 @@ const Player = ({currentSong,isPlaying,setIsPlaying}) => {
                     icon= {isPlaying? faPause: faPlay}
                 />
                 <FontAwesomeIcon
+                    onClick={()=> skipTrackHandler('skip-forward')}
                     className="skip-forward" 
                     size="2x" 
                     icon={faAngleRight}
                 />
             </div>
             <audio 
-                onTimeUpdate={timeUpdateHandler} 
+                onLoadedData={autoPlayHandler}
                 // happens when audio file loads up
                 onLoadedMetadata={timeUpdateHandler}
+                onTimeUpdate={timeUpdateHandler}
                 ref={audioRef} 
                 src={currentSong.audio}
             ></audio>
