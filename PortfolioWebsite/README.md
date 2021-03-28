@@ -26,7 +26,7 @@
 - Gives the course number and description
 
 ### Projects Page
-- This page (currently) hosts three of the projects I've made
+- This page (currently) hosts four of the projects I've made
 
 ### Site Info Page
 - This page gives information on the server, web serve, and site
