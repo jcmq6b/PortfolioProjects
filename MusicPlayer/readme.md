@@ -28,17 +28,21 @@
 #### Screenshots
 
 ![LightHomePage](./screenshots/phone-light-home.JPG)
-<em>Landing Page with Light Mode (On phone)</em>
+
+<p><em>Landing Page with Light Mode (On phone)</em></p>
 <br>
 
 ![LightLibraryPage](./screenshots/phone-light-library.JPG)
-<em>Library Page with Light Mode (On phone)</em>
+
+<p><em>Library Page with Light Mode (On phone)</em></p>
 <br>
 
 ![DarkHomePage](./screenshots/phone-dark-home.JPG)
-<em>Landing Page with Dark Mode (On phone)</em>
+
+<p><em>Landing Page with Dark Mode (On phone)</em></p>
 <br>
 
 ![DarkLibraryPage](./screenshots/phone-dark-library.JPG)
-<em>Library Page with Dark Mode (On phone)</em>
+
+<p><em>Library Page with Dark Mode (On phone)</em></p>
 <br>
