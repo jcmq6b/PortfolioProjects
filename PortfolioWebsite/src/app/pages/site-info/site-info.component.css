@@ -1,17 +1,12 @@
-mat-card{
-    width: 70vw;
-    margin: auto;
-    margin-top: 100px;
-    overflow: auto;
+mat-card {
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+  word-wrap: break-word;
 }
 
-img{
-    width: 150px;
-    margin-right:10px;
-    margin-top: 10px;
-    float: right;
-}
-
-.site_info img{
-    width: 100px;
+@media screen and (max-width: 500px) {
+  mat-card {
+    width: 90%;
+  }
 }

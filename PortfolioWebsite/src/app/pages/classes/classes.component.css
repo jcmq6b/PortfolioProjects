@@ -1,13 +1,18 @@
-table{
-    background-color: rgb(243, 243, 243);
+table {
+  background-color: rgb(243, 243, 243);
 }
 
-.content_wrapper{
-    margin: 50px;
+.content_wrapper {
+  margin: 5%;
 }
 
-.title_wrapper{
-    color:white;
-    text-shadow: 0 1px black;
+.title_wrapper {
+  color: white;
+  text-shadow: 0 1px black;
 }
 
+@media screen and (max-width: 690px) {
+  .content_wrapper {
+    margin: 1.5%;
+  }
+}

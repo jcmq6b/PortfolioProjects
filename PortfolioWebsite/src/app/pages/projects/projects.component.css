@@ -1,110 +1,99 @@
-#projects_container{
-
+/* NAV CSS */
+#side_nav {
+  margin-top: -74px;
+  padding-top: 10%;
+  padding-right: 20px;
+  position: fixed;
+  left: 0;
+  height: 101vh;
+  width: 8%;
+  min-width: 175px;
+  max-width: 500px;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: 0 0.1rem 1rem rgb(80, 80, 80);
+  line-height: 1.2;
+  text-align: center;
 }
-#side_nav{
-    margin-top: -74px;
-    padding-top: 10%;
-    padding-right: 20px;
-    position: fixed;
-    left: 0;
-    height: 100vh;
-    width: 8vw;
-    min-width: 175px;
-    max-width: 500px;
-    background-color:  rgb(255, 255, 255); 
-    overflow-x: hidden;
-    overflow-y: auto;
-    box-shadow: 0 0.1rem 1rem rgb(80, 80, 80);
-    line-height: 1.2;
-    text-align: center;
+#side_nav li {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  list-style-type: none;
+  font-size: 2em;
 }
-
-
-li{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    list-style-type: none;
-    font-size: 2em;
-}
-
-a{
-    color: black;
+a {
+  color: black;
 }
 
-.project_content a{
-    color: rgb(0, 33, 181);
+.project_content a {
+  color: rgb(0, 33, 181);
 }
 
-.title{
-    text-align: center;
-    padding-top: 20px;
-    margin-bottom: 40px;
+/* Content CSS */
+.title {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
 
-h1{
-    font-family: bangers;
-    font-size: 3em;
+h1 {
+  font-family: bangers;
+  font-size: 3em;
+}
+h4 {
+  margin: 0;
 }
 
-.link:hover{
-    text-shadow: 1px 1px 1px rgb(255, 243, 110);
+.project_content {
+  padding-bottom: 10px;
+  margin-left: 10%;
 }
 
-.project_content{
-    padding-bottom: 10px;
+.odd {
+  background-color: rgba(93, 147, 255, 0.43);
+}
+.even {
+  background-color: rgba(167, 255, 199, 0.326);
 }
 
-.description{
-    margin: 10px 0 20px 0;
-    width: 95%;
-    max-height: 35%;
-    overflow-y: auto;
+.description {
+  margin: 10px 0 20px 0;
+  width: 40%;
+  margin: auto;
+  max-height: 35%;
+  overflow-y: auto;
+  word-wrap: break-word;
 }
 
-.pictures{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
+.pictures {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.app_web_picture {
+  padding: 5px;
+  width: 600px;
+}
+.app_em_picture {
+  width: 290px;
+}
+img {
+  width: 100%;
+  height: 100%;
 }
 
-.app_web_picture{
-    padding: 5px;
-    width: 600px;
-}
-
-.app_em_picture{
-    width: 290px;
-}
-
-img{
-    width: 100%;
-    height: 100%;
-}
-
-#bet_tracker, #showcase, #pr_tracker{
-    min-height: 100vh;
-    min-height: 600px;
-    margin-left: 7%;
-}
-
-#div1{
-    background-color: rgba(93, 147, 255, 0.43);
-}
-#div2{
-    background-color: rgba(167, 255, 199, 0.326);
-}
-#div3{
-    background-color: rgba(93, 147, 255, 0.43);
-}
-
-@media (max-width: 1200px) { 
-    #side_nav{ 
-      display: none; 
-    } 
-    #bet_tracker, #showcase, #pr_tracker{
-        margin-left: 5%;
-    }
+/* Smaller Screens CSS */
+@media (max-width: 1200px) {
+  #side_nav {
+    display: none;
+  }
+  #bet_tracker,
+  #showcase,
+  #pr_tracker {
+    margin-left: 5%;
+  }
 }
