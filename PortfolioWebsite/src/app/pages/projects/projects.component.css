@@ -104,7 +104,6 @@ img {
 /* Smaller Screens CSS */
 
 #toTop {
-  display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -123,7 +122,7 @@ img {
   #side_nav {
     display: none;
   }
-  #toTop {
-    display: inherit;
+  .project_content {
+    margin-left: 0;
   }
 }
