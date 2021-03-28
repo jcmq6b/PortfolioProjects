@@ -24,6 +24,7 @@
 - The next song in the library will auto play when the current song is over.
 - Each song is kept in a data.js file in JSON format.
 - Each song has two colors associated with it, these colors can be seen in the album cover's border, and the time progress bar.
+- The current song will be highlighted in the library.
 
 ### Screenshots
 
