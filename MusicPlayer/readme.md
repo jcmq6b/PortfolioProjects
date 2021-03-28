@@ -1,1 +1,7 @@
-This is a page for playing music from a library, made using React
+# React Music Player
+
+### Made by Jessica Murphey
+
+<br>
+
+### Description
