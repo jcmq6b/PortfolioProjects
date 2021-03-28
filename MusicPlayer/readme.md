@@ -27,7 +27,6 @@
 
 ### Screenshots
 
-<div style="text-align:center">
 <p>Landing Page with Light Mode (On phone)</p>
 
 ![LightHomePage](./screenshots/phone-light-home.JPG)
@@ -51,4 +50,3 @@
 ![DarkLibraryPage](./screenshots/phone-dark-library.JPG)
 
 <br>
-</div>
