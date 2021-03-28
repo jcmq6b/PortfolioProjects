@@ -25,24 +25,30 @@
 - Each song is kept in a data.js file in JSON format.
 - Each song has two colors associated with it, these colors can be seen in the album cover's border, and the time progress bar.
 
-#### Screenshots
+### Screenshots
+
+<div style="text-align:center">
+<p>Landing Page with Light Mode (On phone)</p>
 
 ![LightHomePage](./screenshots/phone-light-home.JPG)
 
-<p><em>Landing Page with Light Mode (On phone)</em></p>
 <br>
+
+<p>Library Page with Light Mode (On phone)</p>
 
 ![LightLibraryPage](./screenshots/phone-light-library.JPG)
 
-<p><em>Library Page with Light Mode (On phone)</em></p>
 <br>
+
+<p>Landing Page with Dark Mode (On phone)</p>
 
 ![DarkHomePage](./screenshots/phone-dark-home.JPG)
 
-<p><em>Landing Page with Dark Mode (On phone)</em></p>
 <br>
+
+<p>Library Page with Dark Mode (On phone)</p>
 
 ![DarkLibraryPage](./screenshots/phone-dark-library.JPG)
 
-<p><em>Library Page with Dark Mode (On phone)</em></p>
 <br>
+</div>
