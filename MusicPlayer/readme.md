@@ -20,6 +20,7 @@
   - Skip to the next or previous song in the library
   - Open and close the song library
   - Switch from light mode and dark mode
+  - Change the time of the song by dragging on the progress bar
 
 - The next song in the library will auto play when the current song is over.
 - Each song is kept in a data.js file in JSON format.
