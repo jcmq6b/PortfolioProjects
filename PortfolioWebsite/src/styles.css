@@ -1,20 +1,26 @@
-@font-face{
-    font-family: "bangers";
-    src: url("./assets/custom_fonts/Bangers-Regular.ttf") format("truetype");
+@font-face {
+  font-family: "bangers";
+  src: url("./assets/custom_fonts/Bangers-Regular.ttf") format("truetype");
 }
 
-.bangers_font{
-    font-family: "bangers";
+@font-face {
+  font-family: "roboto-bold";
+  src: url("./assets/custom_fonts/Roboto-Bold.ttf") format("truetype");
 }
 
-body{
-    background-color: rgb(37, 37, 37);
+.bangers_font {
+  font-family: "bangers";
 }
-html, body { 
-    margin: 0;
-    padding: 0;
+
+.roboto-bold {
+  font-family: "roboto-bold";
 }
-body { 
-    margin: 0; 
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
+
+body {
+  background-color: rgb(37, 37, 37);
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
 }

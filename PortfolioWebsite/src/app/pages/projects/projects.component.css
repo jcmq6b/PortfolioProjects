@@ -2,7 +2,6 @@
 #side_nav {
   margin-top: -74px;
   padding-top: 5%;
-  padding-right: 20px;
   position: fixed;
   left: 0;
   height: 101vh;
@@ -16,6 +15,9 @@
   line-height: 1.2;
   text-align: center;
 }
+ul {
+  padding: 20px;
+}
 #side_nav li {
   margin-left: auto;
   margin-right: auto;
@@ -24,7 +26,8 @@
   font-size: 2em;
 }
 #side_nav a {
-  color: black;
+  color: rgb(13, 12, 51);
+  text-decoration: underline 1px;
 }
 
 #projects_container {
@@ -45,7 +48,7 @@
 }
 
 h1 {
-  font-family: bangers;
+  font-family: roboto-bold;
   font-size: 3em;
 }
 h4 {
