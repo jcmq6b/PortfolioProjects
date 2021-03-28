@@ -17,13 +17,13 @@
   margin: 0 6% 0 6%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .content_wrap {
     margin: 0 3% 0 3%;
   }
 }
 
-@media screen and (max-width: 764px) {
+@media screen and (max-width: 900px) {
   .content_wrap {
     margin: 0;
   }
