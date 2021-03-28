@@ -31,7 +31,7 @@
 ### Site Info Page
 - This page gives information on the server, web serve, and site
 
-## Projects
+## Projects List On Site
 #### Bet Tracker App
 - [Link To Report](https://github.com/jcmq6b/PortfolioProjects/tree/master/BetTrackerApp)
 - [Link To Web Version](https://www.murpheysdomain.com/BetTrackerApp/)
