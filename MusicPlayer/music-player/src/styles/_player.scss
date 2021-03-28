@@ -66,6 +66,20 @@ input[type="range"]::-webkit-slider-thumb {
   pointer-events: none;
 }
 
+#volume_input {
+  transform: rotate(270deg);
+}
+
+//3/4 - Half Screen
+@media screen and (max-width: 1120px) {
+  .time-control {
+    width: 75%;
+  }
+  .play-control {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .time-control {
     width: 90%;

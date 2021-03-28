@@ -22,7 +22,8 @@ function App() {
     duration: 0,
     animationPercentage: 0,
   });
-  const [libraryStatus, setLibraryStatus] =useState(false);
+  const [libraryStatus, setLibraryStatus] = useState(false);
+  const [darkMode, setDarkMode] = useState(false); //fase is light mode, true = dark mode
   
   //Ref (to access html elements)
   const audioRef = useRef(null);
@@ -41,8 +42,10 @@ function App() {
 };
 
   return (
-    <div className={`App ${libraryStatus ? 'library-active':''}`}>
+    <div className={`App ${libraryStatus ? 'library-active':''}`} id={`${darkMode ? 'dark':'light'}`}>
       <Nav 
+        setDarkMode = {setDarkMode}
+        darkMode = {darkMode}
         libraryStatus={libraryStatus}
         setLibraryStatus={setLibraryStatus}
       />

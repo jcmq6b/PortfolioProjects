@@ -9,7 +9,7 @@ function chillHop() {
         "https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
       artist: "Aso, Middle School, Aviino",
       audio: "https://mp3.chillhop.com/serve.php/?mp3=10075",
-      color: ["#205950", "#2ab3bf"],
+      color: ["#BC9258", "#2ab3bf"],
       id: uuidv4(),
       active: true, //Fist song is set to true
       //this is the song that is shown when the page first loads
@@ -30,7 +30,7 @@ function chillHop() {
         "https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
       artist: "Swørn",
       audio: "https://mp3.chillhop.com/serve.php/?mp3=9222",
-      color: ["#CD607D", "#c94043"],
+      color: ["#E19B95", "#561147"],
       id: uuidv4(),
       active: false,
     },
@@ -50,7 +50,7 @@ function chillHop() {
         "https://chillhop.com/wp-content/uploads/2020/07/ff35dede32321a8aa0953809812941bcf8a6bd35-1024x1024.jpg",
       artist: "Swørn",
       audio: "https://mp3.chillhop.com/serve.php/?mp3=9228",
-      color: ["#CD607D", "#c94043"],
+      color: ["#E19B95", "#561147"],
       id: uuidv4(),
       active: false,
     },
@@ -60,7 +60,7 @@ function chillHop() {
         "https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
       artist: "Aso, Middle School, Aviino",
       audio: "https://mp3.chillhop.com/serve.php/?mp3=10074",
-      color: ["#205950", "#2ab3bf"],
+      color: ["#BC9258", "#2ab3bf"],
       id: uuidv4(),
       active: false,
     },
@@ -82,7 +82,7 @@ function chillHop() {
         audio: "https://mp3.chillhop.com/serve.php/?mp3=11224",
         id: uuidv4(),
         active: false,
-        color: ["#F9F9F9", "#ABA6DC"],
+        color: ["#E0A7D0", "#5C6CC1"],
     },
   ];
 }

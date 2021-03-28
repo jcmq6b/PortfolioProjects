@@ -18,7 +18,6 @@ const Player = ({
     setCurrentSong,
     setSongs,
 }) => {
-
     //Event Handlers:
     //Handles changing the active element in songs to true/false
     const activelibraryHandler = (nextPrev) =>{
@@ -100,7 +99,7 @@ const Player = ({
         <div className="player">
             <div className="time-control">
                  {/* Slider that controls time  */}
-                <p>{getTime(songInfo.currentTime)}</p>
+                <p className="mode-color">{getTime(songInfo.currentTime)}</p>
                 <div style={{background: `linear-gradient(to right, ${currentSong.color[0]}, ${currentSong.color[1]})`}} className="track">
                     <input 
                         min={0} 
@@ -111,32 +110,31 @@ const Player = ({
                     />
                     <div style={trackAnim} className="animate-track"></div>
                 </div>
-                <p>{getTime(songInfo.duration)}</p>
+                <p className="mode-color">{getTime(songInfo.duration)}</p>
             </div>
             <div className="play-control">
                 <FontAwesomeIcon
                     onClick={()=> skipTrackHandler('skip-back')}//Arrow function so it doesn't run instantly
-                    className="skip-back" 
+                    className="skip-back mode-color" 
                     size="2x" 
                     icon={faAngleLeft}
                 />
                 <FontAwesomeIcon
                     onClick={playSongHandler}
-                    className="play" 
+                    className="play mode-color" 
                     size="2x" 
                     icon= {isPlaying? faPause: faPlay}
                 />
                 <FontAwesomeIcon
                     onClick={()=> skipTrackHandler('skip-forward')}
-                    className="skip-forward" 
+                    className="skip-forward mode-color" 
                     size="2x" 
                     icon={faAngleRight}
                 />
             </div>
             <audio 
                 onLoadedData={autoPlayHandler}
-                // happens when audio file loads up
-                onLoadedMetadata={timeUpdateHandler}
+                onLoadedMetadata={timeUpdateHandler}// happens when audio file loads up
                 onTimeUpdate={timeUpdateHandler}
                 ref={audioRef} 
                 src={currentSong.audio}
