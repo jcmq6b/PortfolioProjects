@@ -30,7 +30,7 @@
 
 ### Site Info Page
 - This page gives information on the server, web serve, and site
-- 
+
 <br>
 
 ## Projects List On Site
