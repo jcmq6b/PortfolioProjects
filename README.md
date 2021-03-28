@@ -21,5 +21,6 @@ Finished Projects for Portfolio
 - [Link To Code](https://github.com/jcmq6b/PortfolioProjects/tree/master/RoR2CharacterShowcase)
 
 ## Personal Record App
+- Made using Ionic
 - [Link To Code](https://github.com/Mizzou-CSIT4830-CS7830-F20/hackweekprojects-codemonkeys/tree/master/code/pr-app)
 - [Link To App Report](https://github.com/Mizzou-CSIT4830-CS7830-F20/hackweekprojects-codemonkeys/blob/master/report/report.md)
