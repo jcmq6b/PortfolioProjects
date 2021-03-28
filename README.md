@@ -7,6 +7,7 @@ Finished Projects for Portfolio
 - [GitHub Link](https://github.com/jcmq6b/PortfolioProjects/tree/master/PortfolioWebsite)
 
 ## Bet Tracker App
+- Made using Ionic
 - [Link To Report](https://github.com/jcmq6b/PortfolioProjects/tree/master/BetTrackerApp)
 - [Link To Web Version](https://www.murpheysdomain.com/BetTrackerApp/)
 - [Link to Code](https://github.com/jcmq6b/PortfolioProjects/tree/master/BetTrackerApp/code/actualCode)
