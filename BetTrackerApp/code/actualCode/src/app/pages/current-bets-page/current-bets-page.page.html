@@ -20,31 +20,22 @@
   <ion-list>
     <ion-item *ngFor="let bet of this.getActiveBetArray()">
       <ion-item-sliding #slidingItem>
-        <ion-item>
 
-
+        <ion-item class="item-container">
           <div class="bet-wrapper">
-            <div class="amount">
-              <p class="delta-gothic" id="numbers">${{(bet.amount)}}</p>
-            </div>
-            <div class="description">
-              <h4 class="bet-title">{{bet.title}}</h4>
-              <h5 >{{bet.description}}</h5>
-            </div>
+              <h5 class="numbers">${{(bet.amount)}}</h5>
+              <h6>{{bet.description}}</h6>
           </div>
-
           <div id="chevron" (click)="open(slidingItem)">
             <ion-icon size="smaller" name="chevron-back"></ion-icon>
           </div>
         </ion-item>
 
         <ion-item-options side="end">
-
           <ion-button (click)="completeBetAlert(bet)" color="success" expand="full" class="siding">
             <ion-icon name="checkmark"></ion-icon>
             <strong>Finish</strong>
           </ion-button>
-
           <ion-button (click)="deleteBet(bet)" color="danger" expand="full" class="siding">
             <ion-icon name="trash"></ion-icon>
             <strong>Delete</strong>

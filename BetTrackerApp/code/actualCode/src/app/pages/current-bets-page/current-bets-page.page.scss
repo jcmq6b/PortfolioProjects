@@ -7,73 +7,55 @@ ion-button.siding {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
 
-#add {
-  color: white;
-  font-size: 2em;
-}
-
-#title {
-  padding: 0 0 0 18%;
-  font-size: 150%;
-  text-align: center;
-  margin: 0;
-}
-
-#name {
-  font-size: 200%;
-  padding: 0 0 0 14%;
+  #name {
+    font-size: 200%;
+    padding: 0 0 0 14%;
+  }
 }
 
 #owed {
   padding-left: 5%;
   text-align: center;
 }
-#numbers {
-  color: #4b8dff;
-  font-size: 1.1rem;
-  justify-content: left;
-  align-items: center;
-}
+
 .page-title {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin: 0;
+  #title {
+    padding: 0 0 0 18%;
+    font-size: 150%;
+    text-align: center;
+    margin: 0;
+  }
+  #add {
+    font-size: 2em;
+  }
 }
 
-.bet-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: left;
-  text-align: center;
-  width: 100%;
-}
-.amount {
-  margin: 20px 0 20px 0;
-  height: 100%;
-  width: 25%;
-}
-.description {
-  padding-left: 20px;
-  width: 75%;
-}
-h1 {
-  margin: 0;
-}
-.bet-title {
-  font-size: large;
-  text-decoration: underline;
-  margin: 0;
-}
-
-h5 {
-  text-align: left;
-  font-size: medium;
-}
-
-#chevron {
-  justify-content: right;
+.item-container {
+  .bet-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 100%;
+    width: 95%;
+    padding: 0.5em;
+    margin-bottom: 0.8em;
+    background-color: rgb(56, 56, 56);
+    h5,
+    h6 {
+      margin: 0;
+    }
+    .numbers {
+      color: #4b8dff;
+      font-size: 1.5rem;
+      align-items: center;
+      margin-bottom: 0.5em;
+      font-family: "Lobster", cursive;
+    }
+  }
 }

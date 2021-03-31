@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { PersonData} from 'src/app/interfaces/person-data'
 import { Bets } from 'src/app/interfaces/bets'
 import { Storage } from '@ionic/storage'
-import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
+
 
 @Injectable({
   providedIn: 'root'

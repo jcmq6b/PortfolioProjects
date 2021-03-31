@@ -45,23 +45,27 @@ ion-button.siding {
 
 .bet-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: left;
   text-align: center;
   width: 100%;
+
+  .amount {
+    height: 100%;
+    width: 15%;
+  }
+
+  .description {
+    padding-left: 20px;
+    width: 75%;
+    border-left: 2px solid rgb(63, 63, 63);
+  }
 }
-.amount {
-  height: 100%;
-  width: 25%;
-}
-.description {
-  padding-left: 20px;
-  width: 75%;
-  border-left: 2px solid rgb(63, 63, 63);
-}
+
 h1 {
   margin: 0;
 }
+
 .bet-title {
   font-size: large;
   text-decoration: underline;
