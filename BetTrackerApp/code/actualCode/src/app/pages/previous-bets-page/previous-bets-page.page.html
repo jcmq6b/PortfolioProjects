@@ -1,6 +1,6 @@
 <ion-header>
   <ion-item>
-    <ion-button (click)="backButton()"><ion-icon slot="icon-only" name="arrow-back"></ion-icon></ion-button>
+    <ion-button size="medium" (click)="backButton()"><ion-icon slot="icon-only" name="arrow-back"></ion-icon></ion-button>
     <ion-title id="name">{{this.selectedPerson}}</ion-title>
   </ion-item>
 </ion-header>
@@ -9,31 +9,19 @@
   <ion-item>
     <ion-label id="title">Previous Bets</ion-label>
   </ion-item>
-  <ion-list *ngFor="let bet of this.getBetArray()">
-    <ion-item *ngIf="!bet.active">
+  <ion-list>
+    <ion-item *ngFor="let bet of this.getPastBetArray()">
       <ion-item-sliding #slidingItem>
         <ion-item>
-          <ion-grid>
-            <ion-row>
-              <ion-col class="btmborder">
-                Title: {{bet.title}}
-              </ion-col>
-              <ion-col class="btmborder">
-                Amount: ${{(bet.amount)}}
-              </ion-col>
-              <ion-col class="btmborder">
-                Result: {{bet.conclusion}}
-              </ion-col>
-            </ion-row>
-            <ion-row>
-              <ion-col size="auto">
-                Description:
-              </ion-col>
-              <ion-col text-wrap class="description">
-                {{bet.description}}
-              </ion-col>
-            </ion-row>
-          </ion-grid>
+          <div class="bet-wrapper">
+            <div class="amount">
+              <h1 class="delta-gothic" id="numbers">${{(bet.amount)}}</h1>
+            </div>
+            <div class="description">
+              <h4 class="bet-title">{{bet.title}}</h4>
+              <h5 >{{bet.description}}</h5>
+            </div>
+          </div>
           <div (click)="open(slidingItem)">
             <ion-icon name="chevron-back"></ion-icon>
           </div>

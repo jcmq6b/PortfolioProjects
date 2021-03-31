@@ -43,12 +43,20 @@ export class PreviousBetsPagePage implements OnInit {
   ngOnInit() {
   }
 
-  getBetArray(){
+  getPastBetArray(){
+    let allBets = []
+    let activeBets = [];
     for(let person of this.personArray){
       if(this.selectedPerson == person.name){
-        return person.bets;
+        allBets = person.bets;
       }
     }
+    for(let bet of allBets){
+      if(bet.active){
+        activeBets.push(bet);
+      }
+    }
+    return activeBets;
   }
 
   backButton(){

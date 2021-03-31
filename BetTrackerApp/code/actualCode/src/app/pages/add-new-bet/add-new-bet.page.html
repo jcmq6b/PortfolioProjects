@@ -27,9 +27,9 @@
       <ion-input type="text" formControlName="description" placeholder="Enter bet description"></ion-input>
     </ion-item>
 
-    <ion-item>
-      <ion-button (click)="backPage()">Cancel</ion-button>
-      <ion-button (click)="addBet()" [disabled]="!betForm.valid">Create</ion-button>
+    <ion-item id="button-div">
+      <ion-button size="medium" (click)="backPage()">Cancel</ion-button>
+      <ion-button size="medium" (click)="addBet()" [disabled]="!betForm.valid">Create</ion-button>
     </ion-item>
   </form>
 </ion-content>

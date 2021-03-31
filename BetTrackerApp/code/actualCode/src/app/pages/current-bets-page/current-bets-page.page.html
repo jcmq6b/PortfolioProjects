@@ -1,8 +1,8 @@
 <ion-header>
-  <ion-item>
-    <ion-button (click)="backButton()"><ion-icon slot="icon-only" name="arrow-back"></ion-icon></ion-button>
+  <ion-item id="top-header">
+    <ion-button size="medium" (click)="backButton()"><ion-icon slot="icon-only" name="arrow-back"></ion-icon></ion-button>
     <ion-title id="name" class="ion-text-center">{{this.selectedPerson}}</ion-title>
-    <ion-button (click)="previousBets()">Bet History</ion-button>
+    <ion-button size="medium" (click)="previousBets()">History</ion-button>
   </ion-item>
   <ion-item>
     <ion-label id="owed">{{this.totalTitle}}: ${{this.getTotalTitle(this.selectedPerson)}}</ion-label>
@@ -10,34 +10,31 @@
 </ion-header>
 
 <ion-content>
-  <ion-item>
+  <ion-item class="page-title">
     <ion-label id="title">Current Bets</ion-label>
-    <ion-button (click)="addBetPage()">New Bet</ion-button>
+    <ion-button (click)="addBetPage()">
+      <ion-icon size="large" name="add-outline" id="add"></ion-icon>
+    </ion-button>
   </ion-item>
-  <ion-list *ngFor="let bet of this.getBetArray()">
-    <ion-item *ngIf="bet.active">
+
+  <ion-list>
+    <ion-item *ngFor="let bet of this.getActiveBetArray()">
       <ion-item-sliding #slidingItem>
         <ion-item>
-          <ion-grid>
-            <ion-row>
-              <ion-col class="btmborder">
-                Title: {{bet.title}}
-              </ion-col>
-              <ion-col class="btmborder">
-                Amount: ${{(bet.amount)}}
-              </ion-col>
-            </ion-row>
-            <ion-row>
-              <ion-col size="auto">
-                Description:
-              </ion-col>
-              <ion-col text-wrap class="description">
-                {{bet.description}}
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-          <div (click)="open(slidingItem)">
-            <ion-icon name="chevron-back"></ion-icon>
+
+
+          <div class="bet-wrapper">
+            <div class="amount">
+              <p class="delta-gothic" id="numbers">${{(bet.amount)}}</p>
+            </div>
+            <div class="description">
+              <h4 class="bet-title">{{bet.title}}</h4>
+              <h5 >{{bet.description}}</h5>
+            </div>
+          </div>
+
+          <div id="chevron" (click)="open(slidingItem)">
+            <ion-icon size="smaller" name="chevron-back"></ion-icon>
           </div>
         </ion-item>
 
@@ -52,10 +49,9 @@
             <ion-icon name="trash"></ion-icon>
             <strong>Delete</strong>
           </ion-button>
-
         </ion-item-options>
-
       </ion-item-sliding>
     </ion-item>
   </ion-list>
+
 </ion-content>

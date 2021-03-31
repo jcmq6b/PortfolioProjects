@@ -1,16 +1,81 @@
-ion-button.siding{
-    height: 100%;
+ion-button.siding {
+  height: 100%;
 }
 
-#title{
-    padding-left: 20px;
-    font-size: 120%;
-    text-decoration: underline;
+#top-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#name{
+#add {
+  color: white;
+  font-size: 2em;
+}
 
-    text-align: center;
-    font-size: 150%;
-    text-decoration: underline;
+#title {
+  font-size: 150%;
+  text-align: center;
+  margin: 0;
+}
+
+#name {
+  font-size: 200%;
+  padding: 0 0 0 10%;
+}
+
+#owed {
+  padding-left: 5%;
+  text-align: center;
+}
+#numbers {
+  color: #4b8dff;
+  font-size: 1.2em;
+  justify-content: left;
+  align-items: center;
+}
+.page-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.bet-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  text-align: center;
+  width: 100%;
+}
+.amount {
+  height: 100%;
+  width: 25%;
+}
+.description {
+  padding-left: 20px;
+  width: 75%;
+  border-left: 2px solid rgb(63, 63, 63);
+}
+h1 {
+  margin: 0;
+}
+.bet-title {
+  font-size: large;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.bet-container {
+  margin-bottom: 3px;
+}
+
+h5 {
+  text-align: left;
+  font-size: medium;
+}
+#name {
+  margin-left: 10%;
 }
