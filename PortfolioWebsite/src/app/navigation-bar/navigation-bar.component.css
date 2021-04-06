@@ -1,45 +1,20 @@
 .navbar {
-  justify-content: space-between;
-}
-mat-toolbar {
-  background-color: white;
-  box-shadow: 0 0.1rem 0.25rem rgb(80, 80, 80);
-  overflow: auto;
-  z-index: 1;
-}
-
-span {
-  padding: 1rem;
-  border-right: 1px solid gray;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  padding-top: 2rem;
+  display: flex;
+  flex: row nowrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
-span:hover {
-  background-color: rgb(202, 202, 202);
-}
-
-span:focus {
-  outline: none;
-}
-
-.active {
-  text-decoration: underline;
-}
-
-.last {
-  border-right: none;
-}
-
-@media screen and (max-width: 600px) {
-  #nav-title {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  #nav-title {
-    display: none !important;
-  }
-  span {
-    padding: 0.35rem;
-  }
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-weight: 400;
 }

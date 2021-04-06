@@ -16,11 +16,20 @@
   font-family: "roboto-bold";
 }
 
-body {
-  background-color: rgb(37, 37, 37);
+html {
+  /* Default= 10px = 1rem */
+  font-size: 62.5%;
 }
+
 html,
 body {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
