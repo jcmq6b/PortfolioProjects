@@ -29,6 +29,7 @@
   display: block;
   margin-bottom: 40px;
   font-size: 6rem;
+  animation: moveInLeft 1s ease-out;
 }
 .bottom-span {
   color: white;
@@ -36,6 +37,7 @@
   display: block;
   font-size: 3.5rem;
   margin-bottom: 1rem;
+  animation: moveInRight 1s ease-out;
 }
 
 .main-container {
@@ -76,6 +78,7 @@ img {
   padding: 1rem 3rem;
   font-size: 2rem;
   font-weight: 500;
+  animation: spin 1.5s ease-in-out;
 }
 .btn-purple {
   color: white;
@@ -98,5 +101,48 @@ img {
 @media screen and (max-width: 690px) {
   .info {
     width: 100%;
+  }
+}
+
+/* Animations */
+/* For browser optimization, its best to only do opacity and/or transform */
+@keyframes moveInLeft {
+  /* Start */
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  /* Finish */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  /* Start */
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-0.5rem);
+  }
+  /* Finish */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
   }
 }

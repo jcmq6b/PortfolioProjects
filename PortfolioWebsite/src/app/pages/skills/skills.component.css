@@ -1,9 +1,16 @@
+.header {
+  margin-top: 5.5rem;
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+  font-weight: 500;
+}
 .main_container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 25px;
+  padding: 0 2rem 2rem 2rem;
 }
 
 .languages {
