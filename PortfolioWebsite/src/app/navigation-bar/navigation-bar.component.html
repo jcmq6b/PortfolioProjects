@@ -5,3 +5,32 @@
     <a routerLink="/projects" routerLinkActive="active">PROJECTS</a>
     <a routerLink="/site-info" routerLinkActive="active">SITE INFO</a>
 </div>
+
+<div class="mobile-navigation">
+    <input #checkbox type="checkbox" class="nav-checkbox" id="navi-toggle" (change)="switchIcon(checkbox.checked)">
+    <label for="navi-toggle" class="navigation-button">
+        <span class="material-icons icon">{{icon}}</span>
+    </label>
+
+    <div class="navigation-background">&nbsp;</div>
+
+    <nav class="navigation-nav">
+        <ul class="navigation-list" (click)="unCheck(checkbox)">
+            <li class="navigation-item">
+                <a routerLink="/home" routerLinkActive="active">HOME</a>
+            </li>
+            <li class="navigation-item">
+                <a routerLink="/skills" routerLinkActive="active">SKILLS</a>
+            </li>
+            <li class="navigation-item">
+                <a routerLink="/classes" routerLinkActive="active">CLASSES</a>
+            </li>
+            <li class="navigation-item">
+                <a routerLink="/projects" routerLinkActive="active">PROJECTS</a>
+            </li>
+            <li class="navigation-item">
+                <a routerLink="/site-info" routerLinkActive="active">SITE INFO</a>
+            </li>
+        </ul>
+    </nav>
+</div>

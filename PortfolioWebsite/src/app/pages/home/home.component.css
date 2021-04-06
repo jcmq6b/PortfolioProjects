@@ -94,3 +94,9 @@ img {
   transform: translateY(-1px);
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.354);
 }
+
+@media screen and (max-width: 690px) {
+  .info {
+    width: 100%;
+  }
+}
