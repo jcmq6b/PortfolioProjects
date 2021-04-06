@@ -1,45 +1,43 @@
-#page-container {
+.header_box {
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0),
+      rgba(8, 47, 68, 0.972)
+    ),
+    url("../../../assets/images/binary-wall.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 35rem;
+  clip-path: polygon(0 0, 100% 0, 100% 55%, 0 100%);
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 8rem 0 0 10rem;
+}
+/* #0FACD9
+#0C75AF */
+
+.top-span {
+  color: white;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 40px;
+  font-size: 6rem;
+}
+
+.bottom-span {
+  color: white;
+  font-weight: 500;
+  display: block;
+  font-size: 3rem;
+}
+.main-container {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
   align-items: center;
 }
-
-.info {
-  width: 45%;
-  margin: 5.5% 0 5% 5%;
-  overflow-wrap: break-word;
-}
-
-.picture {
-  width: 30vw;
-  margin: 5% 0 0 5%;
-}
-
-.center_text {
-  text-align: center;
-}
-
 img {
-  width: 60%;
-  box-shadow: 0 0 10px 2px rgb(60, 60, 60);
-}
-
-h1 {
-  font-size: 2em;
-}
-
-p {
-  font-size: 1.3em;
-}
-
-@media screen and (max-width: 850px) {
-  .info {
-    width: 80%;
-    margin: auto;
-    margin-top: 5%;
-  }
-  .picture {
-    width: 80%;
-  }
+  width: 40rem;
+  border-radius: 20%;
+  border: 1rem solid rgb(233, 232, 232);
 }

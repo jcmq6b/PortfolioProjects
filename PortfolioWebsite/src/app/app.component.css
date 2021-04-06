@@ -1,27 +1,4 @@
-/* .page_container {
-  display: flex;
-  flex-direction: column;
+.page_container {
+  min-width: 100vw;
   min-height: 100vh;
 }
-
-.top-wrap {
-  flex: 1 0 auto;
-} */
-/* 
-.content_wrap {
-  background: url("../assets/images/background.jpg") no-repeat center center
-    fixed;
-  background-size: cover;
-} */
-/* 
-@media screen and (max-width: 1200px) {
-  .content_wrap {
-    margin: 0 3% 0 3%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .content_wrap {
-    margin: 0;
-  }
-} */
