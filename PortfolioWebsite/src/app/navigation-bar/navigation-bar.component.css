@@ -4,12 +4,8 @@
   right: 0;
   width: 100%;
   padding-top: 2rem;
-  padding-left: 50%;
   display: flex;
-  flex: row nowrap;
-  justify-content: space-around;
-  align-items: right;
-  z-index: 10;
+  justify-content: flex-end;
 }
 
 a,
@@ -18,8 +14,15 @@ a:visited {
   color: white;
   font-size: 2rem;
   font-weight: 600;
+  margin: 1rem;
 }
 
 .active {
   text-decoration: underline;
 }
+
+/* @media screen and (max-width: 690px) {
+  .navbar {
+    font-size: 1rem;
+  }
+} */

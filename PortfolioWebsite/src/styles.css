@@ -16,6 +16,14 @@
   font-family: "roboto-bold";
 }
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 html {
   /* Default= 10px = 1rem */
   font-size: 62.5%;
@@ -27,10 +35,9 @@ body {
   box-sizing: border-box;
 }
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+body {
+  /* background-color: #d8f6fc; */
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #181818;
 }

@@ -1,21 +1,28 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: rgb(227, 227, 227);
+}
+
 .header_box {
   background-image: linear-gradient(
-      to top,
-      rgba(255, 255, 255, 0),
-      rgba(8, 47, 68, 0.972)
+      to top right,
+      rgba(0, 100, 154, 0.688),
+      rgba(8, 47, 68, 0.924)
     ),
     url("../../../assets/images/binary-wall.jpg");
   background-size: cover;
   background-position: top;
-  height: 35rem;
-  clip-path: polygon(0 0, 100% 0, 100% 55%, 0 100%);
+  min-height: 35%;
   display: flex;
   flex-direction: column;
-  padding: 8rem 0 0 10rem;
+  align-items: start;
+  justify-content: flex-end;
+  padding-left: 5%;
+  padding-bottom: 1rem;
+  padding-top: 10%;
 }
-/* #0FACD9
-#0C75AF */
-
 .top-span {
   color: white;
   font-weight: 500;
@@ -23,21 +30,67 @@
   margin-bottom: 40px;
   font-size: 6rem;
 }
-
 .bottom-span {
   color: white;
   font-weight: 500;
   display: block;
-  font-size: 3rem;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
 }
+
 .main-container {
+  margin-top: 2rem;
   display: flex;
-  flex-direction: row wrap;
-  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
+
 img {
-  width: 40rem;
-  border-radius: 20%;
-  border: 1rem solid rgb(233, 232, 232);
+  width: 25%;
+  min-width: 20rem;
+  border-radius: 50%;
+}
+.info {
+  width: 50%;
+  margin: 5%;
+  font-size: 1.8rem;
+}
+.info-header {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.btn-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.btn {
+  margin: 2rem 2rem 0 0;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 9rem;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.btn-purple {
+  color: white;
+  background-color: #552775;
+}
+.btn-blue {
+  color: white;
+  background-color: #0a66c2;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.319);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.354);
 }
